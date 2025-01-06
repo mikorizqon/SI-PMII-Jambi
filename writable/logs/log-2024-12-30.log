@@ -1,0 +1,980 @@
+CRITICAL - 2024-12-30 05:19:35 --> ErrorException: Undefined variable $Username
+[Method: POST, Route: Auth/CekLogin]
+in APPPATH\Models\ModelAuth.php on line 12.
+ 1 APPPATH\Models\ModelAuth.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Username', 'C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Models\\ModelAuth.php', 12)
+ 2 APPPATH\Controllers\Auth.php(57): App\Models\ModelAuth->LoginUser('admin', '8cb2237d0679ca88db6464eac60da96345513964')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 05:20:32 --> ErrorException: Undefined variable $Username
+[Method: POST, Route: Auth/CekLogin]
+in APPPATH\Models\ModelAuth.php on line 12.
+ 1 APPPATH\Models\ModelAuth.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Username', 'C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Models\\ModelAuth.php', 12)
+ 2 APPPATH\Controllers\Auth.php(57): App\Models\ModelAuth->LoginUser(null, 'da39a3ee5e6b4b0d3255bfef95601890afd80709')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 05:20:40 --> ErrorException: Undefined variable $Username
+[Method: POST, Route: Auth/CekLogin]
+in APPPATH\Models\ModelAuth.php on line 12.
+ 1 APPPATH\Models\ModelAuth.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Username', 'C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Models\\ModelAuth.php', 12)
+ 2 APPPATH\Controllers\Auth.php(57): App\Models\ModelAuth->LoginUser(null, 'da39a3ee5e6b4b0d3255bfef95601890afd80709')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 05:21:08 --> ErrorException: Undefined variable $Username
+[Method: POST, Route: Auth/CekLogin]
+in APPPATH\Controllers\Auth.php on line 57.
+ 1 APPPATH\Controllers\Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Username', 'C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Controllers\\Auth.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 05:21:14 --> ErrorException: Undefined variable $Username
+[Method: POST, Route: Auth/CekLogin]
+in APPPATH\Controllers\Auth.php on line 57.
+ 1 APPPATH\Controllers\Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Username', 'C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Controllers\\Auth.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 05:21:18 --> ErrorException: Undefined variable $Username
+[Method: POST, Route: Auth/CekLogin]
+in APPPATH\Controllers\Auth.php on line 57.
+ 1 APPPATH\Controllers\Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Username', 'C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Controllers\\Auth.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->CekLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 10:13:26 --> ParseError: Unmatched '}'
+[Method: GET, Route: Auth/index]
+in APPPATH\Controllers\Auth.php on line 83.
+ 1 SYSTEMPATH\Router\Router.php(563): CodeIgniter\Router\AutoRouter->getRoute('Auth/index', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->autoRoute('Auth/index')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Auth/index')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 10:13:27 --> ParseError: Unmatched '}'
+[Method: GET, Route: Auth/index]
+in APPPATH\Controllers\Auth.php on line 83.
+ 1 SYSTEMPATH\Router\Router.php(563): CodeIgniter\Router\AutoRouter->getRoute('Auth/index', 'GET')
+ 2 SYSTEMPATH\Router\Router.php(228): CodeIgniter\Router\Router->autoRoute('Auth/index')
+ 3 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('Auth/index')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 11:02:19 --> CodeIgniter\Filters\Exceptions\FilterException: "forcehttps" filter must have a matching alias defined.
+[Method: GET, Route: DashboardAdmin]
+in SYSTEMPATH\Filters\Filters.php on line 329.
+ 1 SYSTEMPATH\Filters\Filters.php(329): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('forcehttps')
+ 2 SYSTEMPATH\Filters\Filters.php(270): CodeIgniter\Filters\Filters->getRequiredFilters('before')
+ 3 SYSTEMPATH\CodeIgniter.php(389): CodeIgniter\Filters\Filters->runRequired('before')
+ 4 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\CodeIgniter->runRequiredBeforeFilters(Object(CodeIgniter\Filters\Filters))
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 11:02:20 --> CodeIgniter\Filters\Exceptions\FilterException: "forcehttps" filter must have a matching alias defined.
+[Method: GET, Route: DashboardAdmin]
+in SYSTEMPATH\Filters\Filters.php on line 329.
+ 1 SYSTEMPATH\Filters\Filters.php(329): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('forcehttps')
+ 2 SYSTEMPATH\Filters\Filters.php(270): CodeIgniter\Filters\Filters->getRequiredFilters('before')
+ 3 SYSTEMPATH\CodeIgniter.php(389): CodeIgniter\Filters\Filters->runRequired('before')
+ 4 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\CodeIgniter->runRequiredBeforeFilters(Object(CodeIgniter\Filters\Filters))
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 11:02:24 --> CodeIgniter\Filters\Exceptions\FilterException: "forcehttps" filter must have a matching alias defined.
+[Method: GET, Route: Auth/index]
+in SYSTEMPATH\Filters\Filters.php on line 329.
+ 1 SYSTEMPATH\Filters\Filters.php(329): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('forcehttps')
+ 2 SYSTEMPATH\Filters\Filters.php(270): CodeIgniter\Filters\Filters->getRequiredFilters('before')
+ 3 SYSTEMPATH\CodeIgniter.php(389): CodeIgniter\Filters\Filters->runRequired('before')
+ 4 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\CodeIgniter->runRequiredBeforeFilters(Object(CodeIgniter\Filters\Filters))
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 12:21:58 --> ErrorException: Undefined variable $menu
+[Method: GET, Route: DashboardAdmin]
+in APPPATH\Views\v_template_admin.php on line 103.
+ 1 APPPATH\Views\v_template_admin.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php', 103)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 5 APPPATH\Controllers\DashboardAdmin.php(14): view('v_template_admin', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DashboardAdmin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 12:51:17 --> ErrorException: Cannot declare class App\Controllers\DataMapaba, because the name is already in use
+[Method: GET, Route: Data_Mapaba]
+in APPPATH\Controllers\Data_Mapaba.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-30 12:51:19 --> ErrorException: Cannot declare class App\Controllers\DataMapaba, because the name is already in use
+[Method: GET, Route: Data_Mapaba]
+in APPPATH\Controllers\Data_Mapaba.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-30 12:51:19 --> ErrorException: Cannot declare class App\Controllers\DataMapaba, because the name is already in use
+[Method: GET, Route: Data_Mapaba]
+in APPPATH\Controllers\Data_Mapaba.php on line 0.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-30 12:56:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 12:56:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 12:56:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 12:56:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 12:56:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:05:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:05:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:07:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:07:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:08:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:08:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:11:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:12:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:15:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:15:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:16:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:20:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:20:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:20:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:22:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:27:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:27:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:27:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:29:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:29:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:29:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:31:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:31:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Data_Mapaba/v_index.php"
+[Method: GET, Route: Data_Mapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Data_Mapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Data_Mapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('Data_Mapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\Data_Mapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Data_Mapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data_Mapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:38:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:38:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:39:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:39:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:42:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:42:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:42:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:42:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:42:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:42:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:53:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:53:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 13:53:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_index.php"
+[Method: GET, Route: datamapaba]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(19): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 14:42:45 --> ParseError: syntax error, unexpected token ")", expecting "->" or "?->" or "{" or "["
+[Method: GET, Route: datamapaba]
+in APPPATH\Views\datamapaba\v_index.php on line 28.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(24): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 14:44:34 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: datamapaba]
+in APPPATH\Views\datamapaba\v_index.php on line 31.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(24): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 14:47:23 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: datamapaba]
+in APPPATH\Views\datamapaba\v_index.php on line 31.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(25): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 14:47:24 --> ParseError: syntax error, unexpected token "<", expecting end of file
+[Method: GET, Route: datamapaba]
+in APPPATH\Views\datamapaba\v_index.php on line 31.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(25): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 16:16:16 --> ErrorException: Cannot redeclare App\Controllers\datamapaba::__construct()
+[Method: GET, Route: datamapaba]
+in APPPATH\Controllers\datamapaba.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-30 16:16:17 --> ErrorException: Cannot redeclare App\Controllers\datamapaba::__construct()
+[Method: GET, Route: datamapaba]
+in APPPATH\Controllers\datamapaba.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-30 16:16:21 --> ErrorException: Cannot redeclare App\Controllers\datamapaba::__construct()
+[Method: GET, Route: datamapaba]
+in APPPATH\Controllers\datamapaba.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-12-30 16:20:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_iput.php"
+[Method: GET, Route: datamapaba/input]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_iput.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_iput', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_iput')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(39): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->input()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 16:23:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_iput.php"
+[Method: GET, Route: datamapaba/input]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_iput.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_iput', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_iput')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(39): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->input()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 16:23:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_iput.php"
+[Method: GET, Route: datamapaba/input]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_iput.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_iput', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_iput')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(39): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->input()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 16:23:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_iput.php"
+[Method: GET, Route: datamapaba/input]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_iput.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_iput', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_iput')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(39): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->input()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 16:23:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_iput.php"
+[Method: GET, Route: datamapaba/input]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_iput.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_iput', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_iput')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(39): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->input()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 16:24:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datamapaba/v_iput.php"
+[Method: GET, Route: datamapaba/input]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datamapaba/v_iput.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datamapaba/v_iput', [], true)
+ 3 APPPATH\Views\v_template_admin.php(168): view('datamapaba/v_iput')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datamapaba.php(39): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datamapaba->input()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datamapaba))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-30 18:51:00 --> ParseError: syntax error, unexpected token "}"
+[Method: POST, Route: datamapaba/InserData]
+in APPPATH\Models\Modeldatamapaba.php on line 18.
+ 1 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\wamp64\\www\\SI-PMII-Jambi\\vendor\\composer/../../app\\Models\\Modeldatamapaba.php')
+ 2 APPPATH\Controllers\datamapaba.php(13): Composer\Autoload\ClassLoader->loadClass('App\\Models\\Modeldatamapaba')
+ 3 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\datamapaba->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

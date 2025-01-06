@@ -1,0 +1,80 @@
+CRITICAL - 2025-01-01 07:26:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datapkd/v_index.php"
+[Method: GET, Route: datapkd]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datapkd/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datapkd/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(186): view('datapkd/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datapkd.php(26): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datapkd->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datapkd))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-01 07:26:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datapkd/v_index.php"
+[Method: GET, Route: datapkd]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datapkd/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datapkd/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(186): view('datapkd/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datapkd.php(26): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datapkd->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datapkd))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-01 07:26:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datapkd/v_index.php"
+[Method: GET, Route: datapkd]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datapkd/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datapkd/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(186): view('datapkd/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datapkd.php(26): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datapkd->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datapkd))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-01 07:26:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datapkd/v_index.php"
+[Method: GET, Route: datapkd]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datapkd/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datapkd/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(186): view('datapkd/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datapkd.php(26): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datapkd->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datapkd))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-01-01 07:27:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "datapkd/v_index.php"
+[Method: GET, Route: datapkd]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('datapkd/v_index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('datapkd/v_index', [], true)
+ 3 APPPATH\Views\v_template_admin.php(186): view('datapkd/v_index')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\wamp64\\www\\SI-PMII-Jambi\\app\\Views\\v_template_admin.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 7 APPPATH\Controllers\datapkd.php(26): view('v_template_admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\datapkd->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\datapkd))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
