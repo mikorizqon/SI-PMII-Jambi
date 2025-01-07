@@ -13,4 +13,12 @@ class ModelAuth extends Model
             ->where('password', $password)
             ->get()->getRowArray();
     }
+
+    public function LoginPengurusCabang($username, $password)
+    {
+        return $this->db->table('tbl_user')
+        ->where('username', $username)
+        ->where('password', $password)
+        ->get()->getRowArray();
+    }
 }

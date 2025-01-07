@@ -14,16 +14,61 @@
   <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/dist/css/adminlte.min.css">
+  
+  <style>
+    
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border: none;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .form-control {
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ced4da;
+    }
+
+    .form-control:focus {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .btn-primary {
+      background: #007bff;
+      border: none;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .card-header {
+      border-bottom: none;
+      padding-top: 25px;
+    }
+
+    .login-box-msg {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 2px;
+      padding: 0;
+    }
+  </style>
 </head>
 
 <body class="hold-transition login-page">
-<div class="login-box">
-  <!-- /.login-logo -->
+<div class="login-box" style="width: 350px; margin: 0 auto;">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-        <img src="<?= base_url('assets/' . $web['logo_pmii']) ?>" width="40%">
-        <h4><b><?= $web['nama'] ?><b><h4>
-      <a href="<?= base_url('') ?>" class="h6"><b>DATA KADERISASI</b></a>
+        <img src="<?= base_url('assets/' . $web['logo_pmii']) ?>" width="20%">
+        <p class="mt-2 mb-2" style="color: #000; font-size: 20px;">Selamat Datang Sahabat Pergerakan</p>
+        <h4><b><?= $web['nama'] ?></b></h4>
+        <b>DATA KADERISASI</b>
+        
     </div>
     <div class="card-body">
       <p class="login-box-msg">Silahkan Login</p>
@@ -31,66 +76,45 @@
       session();
       $validasi = \Config\Services::validation();
       if (session()->get('pesan')) {
-        echo '<div class="alert alert-danger">';
+        echo '<div class="alert alert-danger alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>';
         echo session()->get('pesan');
         echo '</div>';
       }
       ?>
+      
       <?php echo form_open('Auth/CekLogin') ?>
       <div class="form-group">
-            <label>Username</label>
-          <input name="username" class="form-control" placeholder="username">
-          <p class="text-danger"><?= $validasi->getError('username') ?></p>
-        </div>
-        <div class="form-group">
-        <label>Level</label>
-          <select name="level" class="form-control">
-            <option value="">--pilih--</option>
-            <option value="1">Admin</option>
-            <option value="2">PC PMII Kota Jambi</option>
-            <option value="3">PC PMII Batang Hari</option>
-            <option value="4">PC PMII Tebo</option>
-            <option value="5">PC PMII Sarolangun</option>
-            <option value="6">PC PMII Bungo</option>
-            <option value="7">PC PMII Merangin</option>
-            <option value="8">PC PMII Kerinci</option>
-            <option value="9">PC PMII Tanjung Jabung Barat</option>
-            <option value="10">PC PMII Tanjung Jabung Timur</option>
-          </select>
-          <p class="text-danger"><?= $validasi->getError('level') ?></p>
-        </div>
-        <div class="form-group">
-        <label>Password</label>
-          <input name="password" type="password" class="form-control" placeholder="password">
-          <p class="text-danger"><?= $validasi->getError('password') ?></p>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
-            </div>
-          </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Login</button>
-          </div>
-          <!-- /.col -->
-        </div>
-        <?php echo form_close() ?>
+        <label><i class="fas fa-user mr-2"></i>Username</label>
+        <input name="username" class="form-control" placeholder="Masukkan username">
+        <p class="text-danger"><?= $validasi->getError('username') ?></p>
+      </div>
 
-      
-    <!-- /.card-body -->
-  </div>
-  </div>
-  </div>
+      <div class="form-group">
+        <label><i class="fas fa-lock mr-2"></i>Password</label>
+        <input name="password" type="password" class="form-control" placeholder="Masukkan password">
+        <p class="text-danger"><?= $validasi->getError('password') ?></p>
+      </div>
 
-  
-  <!-- /.card -->
+      <div class="form-group">
+        <label><i class="fas fa-users-cog mr-2"></i>Level</label>
+        <select name="level" class="form-control">
+          <option value="">--Pilih Level Login--</option>
+          <option value="1">Admin</option>
+          <option value="2">Pengurus Cabang</option>
+        </select>
+        <p class="text-danger"><?= $validasi->getError('level') ?></p>
+      </div>
+<br> 
+      <div class="row">
+        <div class="col-6">
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </div>
+      </div>
+      <?php echo form_close() ?>
+    </div>
+  </div>
 </div>
-<!-- /.login-box -->
 
 <!-- jQuery -->
 <script src="<?= base_url('AdminLTE') ?>/plugins/jquery/jquery.min.js"></script>

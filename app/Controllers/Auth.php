@@ -8,6 +8,8 @@ use App\Models\ModelAuth;
 
 class Auth extends BaseController
 {
+    protected $Modelpmii;
+    protected $ModelAuth;
 
     public function __construct()
     {
@@ -60,6 +62,17 @@ class Auth extends BaseController
                     session()->set('nama_user', $cek['nama_user']);
                     session()->set('foto', $cek['foto']);
                     return redirect()->to('DashboardAdmin');
+                } else {
+                    session()->setFlashdata('pesan','username atau password salah');
+                    return redirect()->to('Auth/index');
+                }
+            } elseif ($level == 2) {
+                $cek = $this->ModelAuth->LoginPengurusCabang($username, $password);
+                if ($cek) {
+                    session()->set('level', $level);
+                    session()->set('nama_user', $cek['nama_user']);
+                    session()->set('foto', $cek['foto']);
+                    return redirect()->to('DashboardAdmin/DashboardPengurusCabang');
                 } else {
                     session()->setFlashdata('pesan','username atau password salah');
                     return redirect()->to('Auth/index');

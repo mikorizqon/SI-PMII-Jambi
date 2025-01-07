@@ -15,4 +15,15 @@ class DashboardAdmin extends BaseController
         ];
         return view('v_template_admin', $data);
     }
+    public function DashboardPengurusCabang()
+    {
+        $data = [
+            'judul' => 'Dashboard Pengurus Cabang',
+            'subjudul' => 'Dashboard Pengurus Cabang',
+            'menu' => 'dashboard',
+            'submenu' => 'dashboard',
+            'page' => 'v_dashboard_user',
+        ];
+        return view('v_template_admin', $data);
+    }
 }
