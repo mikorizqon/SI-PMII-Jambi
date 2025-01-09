@@ -9,7 +9,7 @@
             session();
             $validasi = \Config\Services::validation();
             ?>
-            <?php echo form_open('datapkd/insertdata') ?>
+            <?php echo form_open('userdatapkl/insertdata') ?>
             <div class="card-body">
 
             <div class="form-group">
@@ -31,17 +31,15 @@
                 </div>
 
             <div class="form-group">
-                    <label>Tanggal Lahir</label>
-                    <input name="tanggal_lahir" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
-                </div>
-
-         
-            
-                <div class="form-group">
                     <label>Cabang</label>
                     <input name="cabang" class="form-control">
                     <p class="text-danger"><?= $validasi->getError('cabang') ?></p>
+                </div>
+
+            <div class="form-group">
+                    <label>Alamat Tinggal</label>
+                    <input name="alamat_tinggal" class="form-control">
+                    <p class="text-danger"><?= $validasi->getError('alamat_tinggal') ?></p>
                 </div>
 
             <div class="form-group">
@@ -51,15 +49,15 @@
                 </div>
             
             <div class="form-group">
-                    <label>Tahun pkd</label>
-                    <input name="tahun_pkd" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('tahun_pkd') ?></p>
+                    <label>Tahun pkl</label>
+                    <input name="tahun_pkl" class="form-control">
+                    <p class="text-danger"><?= $validasi->getError('tahun_pkl') ?></p>
                 </div>
 
             </div>
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-flat">Simpan</button>
-              <a href="<?= base_url('datapkd') ?>" class="btn btn-success btn-flat">Kembali</a>
+              <a href="<?= base_url('userdatapkl') ?>" class="btn btn-success btn-flat">Kembali</a>
             </div>
             <?php echo form_close() ?>
           </div>

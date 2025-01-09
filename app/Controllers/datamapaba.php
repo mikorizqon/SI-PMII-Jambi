@@ -70,8 +70,8 @@ class datamapaba extends BaseController
                     'required' => '{field} Tidak Boleh Kosong',
                 ]
             ],
-            'alamat_tinggal' => [
-                'label' => 'Alamat Tinggal',
+            'cabang' => [
+                'label' => 'cabang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Tidak Boleh Kosong',
@@ -97,7 +97,7 @@ class datamapaba extends BaseController
                     'nama'           => $this->request->getPost('nama'),
                     'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
                     'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'alamat_tinggal' => $this->request->getPost('alamat_tinggal'),
+                    'cabang'         => $this->request->getPost('cabang'),
                     'universitas'    => $this->request->getPost('universitas'),
                     'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
                 ];
@@ -155,8 +155,8 @@ class datamapaba extends BaseController
                     'required' => '{field} Tidak Boleh Kosong',
                 ]
             ],
-            'alamat_tinggal' => [
-                'label' => 'Alamat Tinggal',
+            'cabang' => [
+                'label' => 'Cabang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Tidak Boleh Kosong',
@@ -183,7 +183,7 @@ class datamapaba extends BaseController
                     'nama'           => $this->request->getPost('nama'),
                     'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
                     'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'alamat_tinggal' => $this->request->getPost('alamat_tinggal'),
+                    'cabang'         => $this->request->getPost('cabang'),
                     'universitas'    => $this->request->getPost('universitas'),
                     'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
                 ];

@@ -70,8 +70,9 @@ class datapkn extends BaseController
                     'required' => '{field} Tidak Boleh Kosong',
                 ]
             ],
-            'alamat_tinggal' => [
-                'label' => 'Alamat Tinggal',
+            
+            'cabang' => [
+                'label' => 'cabang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Tidak Boleh Kosong',
@@ -97,7 +98,7 @@ class datapkn extends BaseController
                     'nama'           => $this->request->getPost('nama'),
                     'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
                     'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'alamat_tinggal' => $this->request->getPost('alamat_tinggal'),
+                    'cabang'         => $this->request->getPost('cabang'),
                     'universitas'    => $this->request->getPost('universitas'),
                     'tahun_pkn'   => $this->request->getPost('tahun_pkn'),
                 ];
@@ -155,8 +156,8 @@ class datapkn extends BaseController
                     'required' => '{field} Tidak Boleh Kosong',
                 ]
             ],
-            'alamat_tinggal' => [
-                'label' => 'Alamat Tinggal',
+            'cabang' => [
+                'label' => 'Cabang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Tidak Boleh Kosong',
@@ -183,7 +184,7 @@ class datapkn extends BaseController
                     'nama'           => $this->request->getPost('nama'),
                     'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
                     'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'alamat_tinggal' => $this->request->getPost('alamat_tinggal'),
+                    'cabang'         => $this->request->getPost('cabang'),
                     'universitas'    => $this->request->getPost('universitas'),
                     'tahun_pkn'   => $this->request->getPost('tahun_pkn'),
                 ];

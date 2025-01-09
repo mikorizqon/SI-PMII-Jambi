@@ -9,7 +9,7 @@
             session();
             $validasi = \Config\Services::validation();
             ?>
-            <?php echo form_open('datapkd/insertdata') ?>
+            <?php echo form_open('userdataalumni/insertdata') ?>
             <div class="card-body">
 
             <div class="form-group">
@@ -36,8 +36,8 @@
                     <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
                 </div>
 
-         
-            
+          
+
                 <div class="form-group">
                     <label>Cabang</label>
                     <input name="cabang" class="form-control">
@@ -51,15 +51,15 @@
                 </div>
             
             <div class="form-group">
-                    <label>Tahun pkd</label>
-                    <input name="tahun_pkd" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('tahun_pkd') ?></p>
+                    <label>propesi</label>
+                    <input name="propesi" class="form-control">
+                    <p class="text-danger"><?= $validasi->getError('propesi') ?></p>
                 </div>
 
             </div>
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-flat">Simpan</button>
-              <a href="<?= base_url('datapkd') ?>" class="btn btn-success btn-flat">Kembali</a>
+              <a href="<?= base_url('userdataalumni') ?>" class="btn btn-success btn-flat">Kembali</a>
             </div>
             <?php echo form_close() ?>
           </div>

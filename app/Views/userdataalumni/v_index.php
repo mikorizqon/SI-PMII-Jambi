@@ -4,7 +4,7 @@
                 <h3 class="card-title"><?= $judul ?></h3>
 
                 <div class="card-tools">
-                  <a href="<?= base_url('dataalumni/input') ?>" class="btn btn-primary btn-flat btn-xs">
+                  <a href="<?= base_url('userdataalumni/input') ?>" class="btn btn-primary btn-flat btn-xs">
                     <i class="fas fa-plus"></i> Tambah
                   </a>
                 </div>
@@ -43,6 +43,7 @@
                         <th>Nama</th>
                         <th>Tempat Lahir</th>
                         <th>Tanggal Lahir</th>
+                      
                         <th>Cabang</th>
                         <th>Universitas</th>
                         <th>propesi</th>
@@ -50,7 +51,7 @@
                     <tr>
                     
                     <?php $no = 1;
-                     foreach ($dataalumni as $key => $d) { ?>
+                     foreach ($userdataalumni as $key => $d) { ?>
                     <tr>
                         <td class="text-center"><?= $no++; ?></td>
                         <td class="text-center"><?= $d['id']?></td>
@@ -64,8 +65,8 @@
                         <td class="text-center"><?= $d['propesi']?></td>
                         <td class="text-center">
                             <div class="btn-group">
-                                <a href="<?= base_url('dataalumni/edit/' . $d['nama']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
-                                <a href="<?= base_url('dataalumni/deletedata/' . $d['nama']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
+                                <a href="<?= base_url('userdataalumni/edit/' . $d['nama']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="<?= base_url('userdataalumni/deletedata/' . $d['nama']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
                             </div>
                         </td>
                     </tr>
