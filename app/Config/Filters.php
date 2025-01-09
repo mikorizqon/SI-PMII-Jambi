@@ -91,6 +91,7 @@ class Filters extends BaseFilters
                     'datapkl', 'datapkl/*',
                     'datapkn', 'datapkn/*',
                     'dataalumni', 'dataalumni/*',
+                    'datauser', 'datauser/*',
                 ]
             ],
         ],

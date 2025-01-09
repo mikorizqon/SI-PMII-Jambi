@@ -99,16 +99,16 @@
       <div class="form-group">
         <label><i class="fas fa-users-cog mr-2"></i>Level</label>
         <select name="level" class="form-control">
-          <option value="">--Pilih Level Login--</option>
-          <option value="1">Admin</option>
-          <option value="2">Pengurus Cabang</option>
+          <option value="">--Pilih Login Sebagai--</option>
+          <option value="1">PKC PMII</option>
+          <option value="2">PC PMII</option>
         </select>
         <p class="text-danger"><?= $validasi->getError('level') ?></p>
       </div>
 <br> 
       <div class="row">
-        <div class="col-6">
-          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <div class="col-12 d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary" style="width: 120px;">Login</button>
         </div>
       </div>
       <?php echo form_close() ?>

@@ -4,7 +4,7 @@
                 <h3 class="card-title"><?= $judul ?></h3>
 
                 <div class="card-tools">
-                  <a href="<?= base_url('datapkn/input') ?>" class="btn btn-primary btn-flat btn-xs">
+                  <a href="<?= base_url('datauser/input') ?>" class="btn btn-primary btn-flat btn-xs">
                     <i class="fas fa-plus"></i> Tambah
                   </a>
                 </div>
@@ -14,7 +14,7 @@
               <div class="card-body">
                 <?php
 
-                            use App\Controllers\datapkn;
+                            use App\Controllers\datauser;
 
                 if (session()->get('insert')) {
                     echo '<div class="alert alert-success">';
@@ -37,34 +37,26 @@
                 ?>
                 <table class="table table-bordered table-sm">
                     <tr class="text-center bg-primary">
-                        <th>NO</th>   
-                        <th>ID</th> 
-                        <th>NIK</th>
-                        <th>Nama</th>
-                        <th>Tempat Lahir</th>
-                        <th>Tanggal Lahir</th>
-                        <th>Alamat Tinggal</th>
-                        <th>Universitas</th>
-                        <th>Tahun PKN</th>
+                        <th>NO</th>
+                        <th>Nama User</th>
+                        <th>User Name</th>
+                        
+                        <th>Level</th>
                         <th>Aksi</th>
                     <tr>
                     
                     <?php $no = 1;
-                     foreach ($datapkn as $key => $d) { ?>
+                     foreach ($datauser as $key => $d) { ?>
                     <tr>
                         <td class="text-center"><?= $no++; ?></td>
-                        <td class="text-center"><?= $d['data_pkn']?></td>
-                        <td class="text-center"><?= $d['nik']?></td>
-                        <td class=><?= $d['nama']?></td>
-                        <td class=><?= $d['tempat_lahir']?></td>
-                        <td class="text-center"><?= $d['tanggal_lahir']?></td>
-                        <td class=><?= $d['alamat_tinggal']?></td>
-                        <td class="text-center"><?= $d['universitas']?></td>
-                        <td class="text-center"><?= $d['tahun_pkn']?></td>
+                        <td class=><?= $d['nama_user']?></td>
+                        <td class=><?= $d['username']?></td>
+                        
+                        <td class="text-center"><?= $d['level']?></td>
                         <td class="text-center">
                             <div class="btn-group">
-                                <a href="<?= base_url('datapkn/edit/' . $d['nama']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
-                                <a href="<?= base_url('datapkn/deletedata/' . $d['nama']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
+                                <a href="<?= base_url('datauser/edit/' . $d['nama_user']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="<?= base_url('datauser/deletedata/' . $d['nama_user']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
                             </div>
                         </td>
                     </tr>

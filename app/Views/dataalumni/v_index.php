@@ -37,7 +37,8 @@
                 ?>
                 <table class="table table-bordered table-sm">
                     <tr class="text-center bg-primary">
-                        <th>NO</th>    
+                        <th>NO</th> 
+                        <th>ID</th>   
                         <th>NIK</th>
                         <th>Nama</th>
                         <th>Tempat Lahir</th>
@@ -52,6 +53,7 @@
                      foreach ($dataalumni as $key => $d) { ?>
                     <tr>
                         <td class="text-center"><?= $no++; ?></td>
+                        <td class="text-center"><?= $d['data_alumni']?></td>
                         <td class="text-center"><?= $d['nik']?></td>
                         <td class=><?= $d['nama']?></td>
                         <td class=><?= $d['tempat_lahir']?></td>

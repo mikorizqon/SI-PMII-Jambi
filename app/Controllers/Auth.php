@@ -55,31 +55,27 @@ class Auth extends BaseController
             $username = $this->request->getPost('username');
             $level = $this->request->getPost('level');
             $password = sha1($this->request->getPost('password'));
-            if ($level == 1) {
-                $cek = $this->ModelAuth->LoginUser($username, $password);
-                if ($cek) {
-                    session()->set('level', $level);
-                    session()->set('nama_user', $cek['nama_user']);
-                    session()->set('foto', $cek['foto']);
+            
+            $cek = $this->ModelAuth->LoginUser($username, $password, $level);
+            
+            if ($cek) {
+                session()->set([
+                    'id_user' => $cek['id_user'],
+                    'nama_user' => $cek['nama_user'],
+                    'level' => $cek['level'],
+                    'logged_in' => true
+                ]);
+                
+                if ($level == 1) {
                     return redirect()->to('DashboardAdmin');
-                } else {
-                    session()->setFlashdata('pesan','username atau password salah');
-                    return redirect()->to('Auth/index');
-                }
-            } elseif ($level == 2) {
-                $cek = $this->ModelAuth->LoginPengurusCabang($username, $password);
-                if ($cek) {
-                    session()->set('level', $level);
-                    session()->set('nama_user', $cek['nama_user']);
-                    session()->set('foto', $cek['foto']);
+                } else if ($level == 2) {
                     return redirect()->to('DashboardAdmin/DashboardPengurusCabang');
-                } else {
-                    session()->setFlashdata('pesan','username atau password salah');
-                    return redirect()->to('Auth/index');
                 }
             } else {
-                return redirect()->to('Auth');
+                session()->setFlashdata('pesan','username atau password salah');
+                return redirect()->to('Auth/index');
             }
+            
             //jika valid
         } else {
             return redirect()->to('Auth')->withInput();

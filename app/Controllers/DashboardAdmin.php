@@ -24,6 +24,6 @@ class DashboardAdmin extends BaseController
             'submenu' => 'dashboard',
             'page' => 'v_dashboard_user',
         ];
-        return view('v_template_admin', $data);
+        return view('v_template_user', $data);
     }
 }

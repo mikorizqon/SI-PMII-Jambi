@@ -9,7 +9,7 @@
             session();
             $validasi = \Config\Services::validation();
             ?>
-            <?php echo form_open('datapkn/insertdata') ?>
+            <?php echo form_open('datapkn/InsertData') ?>
             <div class="card-body">
 
             <div class="form-group">

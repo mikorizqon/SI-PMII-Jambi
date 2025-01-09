@@ -37,14 +37,15 @@
                 ?>
                 <table class="table table-bordered table-sm">
                     <tr class="text-center bg-primary">
-                        <th>NO</th>    
+                        <th>NO</th>  
+                        <th>ID</th>  
                         <th>NIK</th>
                         <th>Nama</th>
                         <th>Tempat Lahir</th>
                         <th>Tanggal Lahir</th>
                         <th>Alamat Tinggal</th>
                         <th>Universitas</th>
-                        <th>Tahun pkl</th>
+                        <th>Tahun PKL</th>
                         <th>Aksi</th>
                     <tr>
                     
@@ -52,6 +53,7 @@
                      foreach ($datapkl as $key => $d) { ?>
                     <tr>
                         <td class="text-center"><?= $no++; ?></td>
+                        <td class="text-center"><?= $d['data_pkl']?></td>
                         <td class="text-center"><?= $d['nik']?></td>
                         <td class=><?= $d['nama']?></td>
                         <td class=><?= $d['tempat_lahir']?></td>
