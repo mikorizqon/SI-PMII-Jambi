@@ -97,7 +97,7 @@ class dataalumni extends BaseController
                     'nama'           => $this->request->getPost('nama'),
                     'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
                     'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'cabang' => $this->request->getPost('cabang'),
+                    'cabang'         => $this->request->getPost('cabang'),
                     'universitas'    => $this->request->getPost('universitas'),
                     'propesi'   => $this->request->getPost('propesi'),
                 ];
