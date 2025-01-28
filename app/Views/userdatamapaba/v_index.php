@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <!-- Tombol Tambah -->
-                    <a href="<?= base_url('datamapaba/input') ?>" class="btn btn-primary btn-xs ms-2">
+                    <a href="<?= base_url('userdatamapaba/input') ?>" class="btn btn-primary btn-xs ms-2">
                         <i class="fas fa-plus"></i> Tambah
                     </a>
                   </div>
@@ -54,31 +54,30 @@
                         <th>NIK</th>
                         <th>Nama</th>
                         <th>Tempat Lahir</th>
-                        <th>Tanggal Lahir</th> 
-                        <th>Cabang</th>
+                        <th>Tanggal Lahir</th>
                         <th>Universitas</th>
+                        <th>Cabang</th>
                         <th>Tahun Mapaba</th>
                         <th>Aksi</th>
                     <tr>
                     
                     <?php $no = 1;
-                     foreach ($datamapaba as $key => $d) { ?>
+                     foreach ($userdatamapaba as $key => $d) { ?>
                     <tr class="search-item">
                         <td class="text-center"><?= $no++; ?></td>
-                        <td class="text-center"><?= $d['id']?></td>
+                        <td class="text-center"><?= $d['data_mapaba']?></td>
                         <td class="text-center"><?= $d['nik']?></td>
                         <td class=><?= $d['nama']?></td>
                         <td class=><?= $d['tempat_lahir']?></td>
                         <td class="text-center"><?= $d['tanggal_lahir']?></td>
-                       
                         <td class=><?= $d['cabang']?></td>
                         <td class="text-center"><?= $d['universitas']?></td>
                         <td class="text-center"><?= $d['tahun_mapaba']?></td>
                         <td class="text-center">
                             <div class="btn-group">
                                 
-                                <a href="<?= base_url('datamapaba/edit/' . $d['nama']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
-                                <a href="<?= base_url('datamapaba/deletedata/' . $d['nama']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
+                                <a href="<?= base_url('userdatamapaba/edit/' . $d['nama']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="<?= base_url('userdatamapaba/deletedata/' . $d['nama']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
                             </div>
                         </td>
                     </tr>

@@ -43,7 +43,8 @@
                         <th>Nama</th>
                         <th>Tempat Lahir</th>
                         <th>Tanggal Lahir</th>
-                        <th>Alamat Tinggal</th>
+                      
+                        <th>Cabang</th>
                         <th>Universitas</th>
                         <th>Tahun PKN</th>
                         <th>Aksi</th>
@@ -53,12 +54,12 @@
                      foreach ($datapkn as $key => $d) { ?>
                     <tr>
                         <td class="text-center"><?= $no++; ?></td>
-                        <td class="text-center"><?= $d['data_pkn']?></td>
+                        <td class="text-center"><?= $d['id']?></td>
                         <td class="text-center"><?= $d['nik']?></td>
                         <td class=><?= $d['nama']?></td>
                         <td class=><?= $d['tempat_lahir']?></td>
                         <td class="text-center"><?= $d['tanggal_lahir']?></td>
-                        <td class=><?= $d['alamat_tinggal']?></td>
+                        <td class=><?= $d['cabang']?></td>
                         <td class="text-center"><?= $d['universitas']?></td>
                         <td class="text-center"><?= $d['tahun_pkn']?></td>
                         <td class="text-center">

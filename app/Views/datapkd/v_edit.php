@@ -36,10 +36,12 @@
                     <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
                 </div>
 
-            <div class="form-group">
-                    <label>Alamat Tinggal</label>
-                    <input name="alamat_tinggal" value="<?= $datapkd['alamat_tinggal']?>" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('alamat_tinggal') ?></p>
+           
+            
+                <div class="form-group">
+                    <label>Cabang</label>
+                    <input name="cabang" value="<?= $datapkd['cabang']?>" class="form-control">
+                    <p class="text-danger"><?= $validasi->getError('cabang') ?></p>
                 </div>
 
             <div class="form-group">

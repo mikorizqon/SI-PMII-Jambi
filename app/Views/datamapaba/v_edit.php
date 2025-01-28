@@ -24,22 +24,16 @@
                     <p class="text-danger"><?= $validasi->getError('nama') ?></p>
                 </div>
 
-                <div class="form-group">
-                    <label>Tempat Lahir</label>
-                    <input name="tempat_lahir" value="<?= $datamapaba['tempat_lahir']?>" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('tempat_lahir') ?></p>
-                </div>
-
             <div class="form-group">
                     <label>Tanggal Lahir</label>
                     <input name="tanggal_lahir" value="<?= $datamapaba['tanggal_lahir']?>" class="form-control">
                     <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
                 </div>
 
-            <div class="form-group">
-                    <label>Alamat Tinggal</label>
-                    <input name="alamat_tinggal" value="<?= $datamapaba['alamat_tinggal']?>" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('alamat_tinggal') ?></p>
+                <div class="form-group">
+                    <label>Cabang</label>
+                    <input name="cabang" value="<?= $datamapaba['cabang']?>" class="form-control">
+                    <p class="text-danger"><?= $validasi->getError('cabang') ?></p>
                 </div>
 
             <div class="form-group">
@@ -53,8 +47,6 @@
                     <input name="tahun_mapaba" value="<?= $datamapaba['tahun_mapaba']?>" class="form-control">
                     <p class="text-danger"><?= $validasi->getError('tahun_mapaba') ?></p>
                 </div>
-
-
 
             </div>
             <div class="card-footer">
