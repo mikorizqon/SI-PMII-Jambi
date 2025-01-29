@@ -25,7 +25,7 @@ class datamapaba extends BaseController
         ];
         return view('v_template_admin', $data);
     }
-    
+
     public function Input()
     {
         $data = [
@@ -92,34 +92,34 @@ class datamapaba extends BaseController
                 ]
             ],
         ])) {
-                $data= [
-                    'nik'            => $this->request->getPost('nik'),
-                    'nama'           => $this->request->getPost('nama'),
-                    'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
-                    'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'cabang'         => $this->request->getPost('cabang'),
-                    'universitas'    => $this->request->getPost('universitas'),
-                    'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
-                ];
-                $this->Modeldatamapaba->InsertData($data);
-                session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
-                return redirect()->to('datamapaba');   
-
-                //jika valid
-            } else {
-                return redirect()->to('datamapaba/Input')->withInput();
-            }
-        }
-
-        public function Edit($nama)
-        {
             $data = [
-                'judul'      => 'Data Mapaba',
-                'subjudul'   => 'Edit Data',
-                'menu'       => 'master-data',
-                'submenu'    => 'datamapaba',
-                'page'       => 'datamapaba/v_edit',
-                'datamapaba' => $this->Modeldatamapaba->DetailData($nama),
+                'nik'            => $this->request->getPost('nik'),
+                'nama'           => $this->request->getPost('nama'),
+                'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
+                'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
+                'cabang'         => $this->request->getPost('cabang'),
+                'universitas'    => $this->request->getPost('universitas'),
+                'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
+            ];
+            $this->Modeldatamapaba->InsertData($data);
+            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
+            return redirect()->to('datamapaba');
+
+            //jika valid
+        } else {
+            return redirect()->to('datamapaba/Input')->withInput();
+        }
+    }
+
+    public function Edit($nama)
+    {
+        $data = [
+            'judul'      => 'Data Mapaba',
+            'subjudul'   => 'Edit Data',
+            'menu'       => 'master-data',
+            'submenu'    => 'datamapaba',
+            'page'       => 'datamapaba/v_edit',
+            'datamapaba' => $this->Modeldatamapaba->DetailData($nama),
         ];
         return view('v_template_admin', $data);
     }
@@ -177,33 +177,33 @@ class datamapaba extends BaseController
                 ]
             ],
         ])) {
-                $data= [
-                    'nama'=> $nama,
-                    'nik'            => $this->request->getPost('nik'),
-                    'nama'           => $this->request->getPost('nama'),
-                    'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
-                    'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'cabang'         => $this->request->getPost('cabang'),
-                    'universitas'    => $this->request->getPost('universitas'),
-                    'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
-                ];
-                $this->Modeldatamapaba->updatedata($data);
-                session()->setFlashdata('update', 'Data Berhasil Diupdate');
-                return redirect()->to('datamapaba');   
-
-                //jika valid
-            } else {
-                return redirect()->to('datamapaba/Input')->withInput();
-            }
-        }
-
-        public function deletedata($nama)
-        {
-            $data= [
-                'nama'=> $nama,
+            $data = [
+                'nama' => $nama,
+                'nik'            => $this->request->getPost('nik'),
+                'nama'           => $this->request->getPost('nama'),
+                'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
+                'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
+                'cabang'         => $this->request->getPost('cabang'),
+                'universitas'    => $this->request->getPost('universitas'),
+                'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
             ];
-            $this->Modeldatamapaba->deletedata($data);
-            session()->setFlashdata('delete', 'Data Berhasil Didelete');
+            $this->Modeldatamapaba->updatedata($data);
+            session()->setFlashdata('update', 'Data Berhasil Diupdate');
             return redirect()->to('datamapaba');
+
+            //jika valid
+        } else {
+            return redirect()->to('datamapaba')->withInput();
         }
+    }
+
+    public function deletedata($nama)
+    {
+        $data = [
+            'nama' => $nama,
+        ];
+        $this->Modeldatamapaba->deletedata($data);
+        session()->setFlashdata('delete', 'Data Berhasil Didelete');
+        return redirect()->to('datamapaba');
+    }
 }

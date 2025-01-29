@@ -30,10 +30,9 @@
         <p class="text-danger"><?= $validasi->getError('tempat_lahir') ?></p>
       </div>
 
-<<<<<<< HEAD
       <div class="form-group">
         <label>Tanggal Lahir</label>
-        <input name="tanggal_lahir" class="form-control">
+        <input name="tanggal_lahir" type="date" class="form-control">
         <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
       </div>
 
@@ -42,20 +41,12 @@
         <input name="alamat_tinggal" class="form-control">
         <p class="text-danger"><?= $validasi->getError('alamat_tinggal') ?></p>
       </div>
-=======
-            <div class="form-group">
-                    <label>Tanggal Lahir</label>
-                    <input name="tanggal_lahir" type="date" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
-                </div>
 
-          
-                <div class="form-group">
-                    <label>Cabang</label>
-                    <input name="cabang" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('cabang') ?></p>
-                </div>
->>>>>>> 4565bbd2ad17e67f13c2383eb2f27dbb87f10042
+      <div class="form-group">
+        <label>Cabang</label>
+        <input name="cabang" class="form-control">
+        <p class="text-danger"><?= $validasi->getError('cabang') ?></p>
+      </div>
 
       <div class="form-group">
         <label>Universitas</label>
