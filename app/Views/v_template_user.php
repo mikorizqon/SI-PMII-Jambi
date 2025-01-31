@@ -248,28 +248,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </li>
 
             <li class="nav-item">
-              <a href="<?= base_url('datapkd') ?>" class="nav-link <?= $submenu == 'datapkd' ? 'active' : '' ?>">
+              <a href="<?= base_url('userdatapkd') ?>" class="nav-link <?= $submenu == 'userdatapkd' ? 'active' : '' ?>">
                 <i class="fas fa-th-list"></i>
                 <p>DATA PKD</p>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="<?= base_url('datapkl') ?>" class="nav-link <?= $submenu == 'datapkl' ? 'active' : '' ?>">
+              <a href="<?= base_url('userdatapkl') ?>" class="nav-link <?= $submenu == 'userdatapkl' ? 'active' : '' ?>">
                 <i class="fas fa-server"></i>
                 <p>DATA PKL</p>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="<?= base_url('datapkn') ?>" class="nav-link <?= $submenu == 'datapkn' ? 'active' : '' ?>">
+              <a href="<?= base_url('userdatapkn') ?>" class="nav-link <?= $submenu == 'userdatapkn' ? 'active' : '' ?>">
                 <i class="fas fa-table"></i>
                 <p>DATA PKN</p>
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="<?= base_url('dataalumni') ?>" class="nav-link <?= $submenu == 'dataalumni' ? 'active' : '' ?>">
+              <a href="<?= base_url('userdataalumni') ?>" class="nav-link <?= $submenu == 'userdataalumni' ? 'active' : '' ?>">
                 <i class="fas fa-user-tie"></i>
                 <p>DATA ALUMNI</p>
               </a>

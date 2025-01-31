@@ -37,4 +37,14 @@ class Modeldatapkn extends Model
             ->where('nama', $data['nama'])
             ->delete($data);
     }
+
+    public function AllDataByCabang($cabang)
+    {
+        $builder = $this->db->table('tbl_data-pkn');
+        $builder->where('cabang', $cabang);
+        $builder->orderBy('created_at', 'DESC');
+        $query = $builder->get();
+        log_message('info', 'Query: ' . $this->db->getLastQuery());
+        return $query->getResultArray();
+    }
 }

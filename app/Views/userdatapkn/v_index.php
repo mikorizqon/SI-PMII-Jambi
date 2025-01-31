@@ -53,7 +53,7 @@
                      foreach ($userdatapkn as $key => $d) { ?>
                     <tr>
                         <td class="text-center"><?= $no++; ?></td>
-                        <td class="text-center"><?= $d['data_pkn']?></td>
+                        <td class="text-center"><?= $d['id']?></td>
                         <td class="text-center"><?= $d['nik']?></td>
                         <td class=><?= $d['nama']?></td>
                         <td class=><?= $d['tempat_lahir']?></td>
