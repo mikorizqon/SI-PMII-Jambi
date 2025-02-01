@@ -102,7 +102,7 @@ class datamapaba extends BaseController
                 'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
             ];
             $this->Modeldatamapaba->InsertData($data);
-            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
+            session()->setFlashdata('insert', 'Data berhasil ditambahkan!');
             return redirect()->to('datamapaba');
 
             //jika valid
@@ -178,7 +178,7 @@ class datamapaba extends BaseController
             ],
         ])) {
             $data = [
-                'nama' => $nama,
+                'nama_lama'      => $nama,
                 'nik'            => $this->request->getPost('nik'),
                 'nama'           => $this->request->getPost('nama'),
                 'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
@@ -188,7 +188,7 @@ class datamapaba extends BaseController
                 'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
             ];
             $this->Modeldatamapaba->updatedata($data);
-            session()->setFlashdata('update', 'Data Berhasil Diupdate');
+            session()->setFlashdata('update', 'Data berhasil diperbarui!');
             return redirect()->to('datamapaba');
 
             //jika valid
@@ -203,7 +203,7 @@ class datamapaba extends BaseController
             'nama' => $nama,
         ];
         $this->Modeldatamapaba->deletedata($data);
-        session()->setFlashdata('delete', 'Data Berhasil Didelete');
+        session()->setFlashdata('delete', 'Data berhasil dihapus!');
         return redirect()->to('datamapaba');
     }
 }

@@ -26,9 +26,17 @@ class Modeldatamapaba extends Model
 
     public function updatedata($data)
     {
-        $this->db->table('tbl_data-mapaba')
-            ->where('nama', $data['nama'])
-            ->update($data);
+        return $this->db->table('tbl_data-mapaba')
+            ->where('nama', $data['nama_lama'])
+            ->update([
+                'nik'           => $data['nik'],
+                'nama'          => $data['nama'],
+                'tempat_lahir'  => $data['tempat_lahir'],
+                'tanggal_lahir' => $data['tanggal_lahir'],
+                'cabang'        => $data['cabang'],
+                'universitas'   => $data['universitas'],
+                'tahun_mapaba'  => $data['tahun_mapaba']
+            ]);
     }
 
     public function DeleteData($data)

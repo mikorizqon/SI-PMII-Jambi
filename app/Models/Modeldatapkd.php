@@ -24,27 +24,25 @@ class Modeldatapkd extends Model
             ->get()->getRowArray();
     }
 
-    public function UpdateData($data)
-    {
-        $this->db->table('tbl_data-pkd')
-            ->where('nama', $data['nama'])
-            ->update($data);
-    }
-
-    public function DeleteData($data)
+    public function deletedata($data)
     {
         $this->db->table('tbl_data-pkd')
             ->where('nama', $data['nama'])
             ->delete($data);
     }
 
-    public function AllDataByCabang($cabang)
+    public function updatedata($data)
     {
-        $builder = $this->db->table('tbl_data-pkd');
-        $builder->where('cabang', $cabang);
-        $builder->orderBy('created_at', 'DESC');
-        $query = $builder->get();
-        log_message('info', 'Query: ' . $this->db->getLastQuery());
-        return $query->getResultArray();
+        return $this->db->table('tbl_data-pkd')
+            ->where('nama', $data['nama_lama'])
+            ->update([
+                'nik'           => $data['nik'],
+                'nama'          => $data['nama'],
+                'tempat_lahir'  => $data['tempat_lahir'],
+                'tanggal_lahir' => $data['tanggal_lahir'],
+                'cabang'        => $data['cabang'],
+                'universitas'   => $data['universitas'],
+                'tahun_pkd'     => $data['tahun_pkd']
+            ]);
     }
 }

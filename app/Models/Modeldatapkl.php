@@ -24,14 +24,7 @@ class Modeldatapkl extends Model
             ->get()->getRowArray();
     }
 
-    public function UpdateData($data)
-    {
-        $this->db->table('tbl_data-pkl')
-            ->where('nama', $data['nama'])
-            ->update($data);
-    }
-
-    public function DeleteData($data)
+    public function deletedata($data)
     {
         $this->db->table('tbl_data-pkl')
             ->where('nama', $data['nama'])
@@ -46,5 +39,20 @@ class Modeldatapkl extends Model
         $query = $builder->get();
         log_message('info', 'Query: ' . $this->db->getLastQuery());
         return $query->getResultArray();
+    }
+
+    public function updatedata($data)
+    {
+        return $this->db->table('tbl_data-pkl')
+            ->where('nama', $data['nama_lama'])
+            ->update([
+                'nik'           => $data['nik'],
+                'nama'          => $data['nama'],
+                'tempat_lahir'  => $data['tempat_lahir'],
+                'tanggal_lahir' => $data['tanggal_lahir'],
+                'cabang'        => $data['cabang'],
+                'universitas'   => $data['universitas'],
+                'tahun_pkl'     => $data['tahun_pkl']
+            ]);
     }
 }

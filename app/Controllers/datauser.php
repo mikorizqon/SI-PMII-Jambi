@@ -7,6 +7,7 @@ use App\Models\Modeldatauser;
 
 class datauser extends BaseController
 {
+    protected $Modeldatauser;
 
     public function __construct()
     {
@@ -25,7 +26,7 @@ class datauser extends BaseController
         ];
         return view('v_template_admin', $data);
     }
-    
+
     public function Input()
     {
         $data = [
@@ -72,32 +73,32 @@ class datauser extends BaseController
             ],
 
         ])) {
-                $data= [
-                    'nama_user'            => $this->request->getPost('nama_user'),
-                    'username'           => $this->request->getPost('username'),
-                    'password'   => $this->request->getPost('password'),
-                    'level'  => $this->request->getPost('level'),
-
-                ];
-                $this->Modeldatauser->InsertData($data);
-                session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
-                return redirect()->to('datauser');   
-
-                //jika valid
-            } else {
-                return redirect()->to('datauser/Input')->withInput();
-            }
-        }
-
-        public function Edit($nama)
-        {
             $data = [
-                'judul'      => 'Data user',
-                'subjudul'   => 'Edit Data',
-                'menu'       => 'master-data',
-                'submenu'    => 'datauser',
-                'page'       => 'datauser/v_edit',
-                'datauser' => $this->Modeldatauser->DetailData($nama),
+                'nama_user'            => $this->request->getPost('nama_user'),
+                'username'           => $this->request->getPost('username'),
+                'password'   => $this->request->getPost('password'),
+                'level'  => $this->request->getPost('level'),
+
+            ];
+            $this->Modeldatauser->InsertData($data);
+            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
+            return redirect()->to('datauser');
+
+            //jika valid
+        } else {
+            return redirect()->to('datauser/Input')->withInput();
+        }
+    }
+
+    public function Edit($nama)
+    {
+        $data = [
+            'judul'      => 'Data user',
+            'subjudul'   => 'Edit Data',
+            'menu'       => 'master-data',
+            'submenu'    => 'datauser',
+            'page'       => 'datauser/v_edit',
+            'datauser' => $this->Modeldatauser->DetailData($nama),
         ];
         return view('v_template_admin', $data);
     }
@@ -133,33 +134,29 @@ class datauser extends BaseController
                     'required' => '{field} Tidak Boleh Kosong',
                 ]
             ],
-            
+
         ])) {
-                $data= [
-                    'nama'=> $nama,
-                    'nama_user'            => $this->request->getPost('nama_user'),
-                    'username'           => $this->request->getPost('username'),
-                    'password'   => $this->request->getPost('password'),
-                    'level'  => $this->request->getPost('level'),
-
-                ];
-                $this->Modeldatauser->updatedata($data);
-                session()->setFlashdata('update', 'Data Berhasil Diupdate');
-                return redirect()->to('datauser');   
-
-                //jika valid
-            } else {
-                return redirect()->to('datauser/Input')->withInput();
-            }
-        }
-
-        public function deletedata($nama)
-        {
-            $data= [
-                'nama'=> $nama,
+            $data = [
+                'nama_lama'  => $nama,
+                'nama_user'  => $this->request->getPost('nama_user'),
+                'username'   => $this->request->getPost('username'),
+                'password'   => $this->request->getPost('password'),
+                'level'      => $this->request->getPost('level'),
             ];
-            $this->Modeldatauser->deletedata($data);
-            session()->setFlashdata('delete', 'Data Berhasil Didelete');
+            $this->Modeldatauser->updatedata($data);
+            session()->setFlashdata('update', 'Data berhasil diperbarui!');
             return redirect()->to('datauser');
         }
+        return redirect()->to('datauser')->withInput();
+    }
+
+    public function deletedata($nama)
+    {
+        $data = [
+            'nama' => $nama,
+        ];
+        $this->Modeldatauser->deletedata($data);
+        session()->setFlashdata('delete', 'Data Berhasil Didelete');
+        return redirect()->to('datauser');
+    }
 }
