@@ -7,6 +7,7 @@ use App\Models\Modeldatamapaba;
 
 class datamapaba extends BaseController
 {
+    protected $Modeldatamapaba;
 
     public function __construct()
     {
@@ -71,7 +72,7 @@ class datamapaba extends BaseController
                 ]
             ],
             'cabang' => [
-                'label' => 'cabang',
+                'label' => 'Cabang',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} Tidak Boleh Kosong',
@@ -102,16 +103,13 @@ class datamapaba extends BaseController
                 'tahun_mapaba'   => $this->request->getPost('tahun_mapaba'),
             ];
             $this->Modeldatamapaba->InsertData($data);
-            session()->setFlashdata('insert', 'Data berhasil ditambahkan!');
+            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
             return redirect()->to('datamapaba');
-
-            //jika valid
-        } else {
-            return redirect()->to('datamapaba/Input')->withInput();
         }
+        return redirect()->to('datamapaba/Input')->withInput();
     }
 
-    public function Edit($id)
+    public function Edit($nama)
     {
         $data = [
             'judul'      => 'Data Mapaba',
@@ -119,12 +117,12 @@ class datamapaba extends BaseController
             'menu'       => 'master-data',
             'submenu'    => 'datamapaba',
             'page'       => 'datamapaba/v_edit',
-            'datamapaba' => $this->Modeldatamapaba->DetailData($id),
+            'datamapaba' => $this->Modeldatamapaba->DetailData($nama),
         ];
         return view('v_template_admin', $data);
     }
 
-    public function updatedata($id)
+    public function updatedata($nama)
     {
         if ($this->validate([
             'nik' => [
@@ -178,7 +176,6 @@ class datamapaba extends BaseController
             ],
         ])) {
             $data = [
-                'id' => $id,
                 'nama_lama'      => $nama,
                 'nik'            => $this->request->getPost('nik'),
                 'nama'           => $this->request->getPost('nama'),
@@ -191,11 +188,8 @@ class datamapaba extends BaseController
             $this->Modeldatamapaba->updatedata($data);
             session()->setFlashdata('update', 'Data berhasil diperbarui!');
             return redirect()->to('datamapaba');
-
-            //jika valid
-        } else {
-            return redirect()->to('datamapaba')->withInput();
         }
+        return redirect()->to('datamapaba')->withInput();
     }
 
     public function deletedata($nama)
