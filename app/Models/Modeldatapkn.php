@@ -6,6 +6,10 @@ use CodeIgniter\Model;
 
 class Modeldatapkn extends Model
 {
+    protected $table = 'tbl_data-pkn';
+    protected $primaryKey = 'nama';
+    protected $allowedFields = ['nik', 'nama', 'tempat_lahir', 'tanggal_lahir', 'cabang', 'universitas', 'tahun_pkn'];
+
     public function AllData()
     {
         return $this->db->table('tbl_data-pkn')
@@ -33,8 +37,8 @@ class Modeldatapkn extends Model
 
     public function updatedata($data)
     {
-        return $this->db->table('tbl_data-pkn')
-            ->where('nama', $data['nama_lama'])
+        return $this->db->table($this->table)
+            ->where('nama', $data['nama'])
             ->update([
                 'nik'           => $data['nik'],
                 'nama'          => $data['nama'],
@@ -44,5 +48,13 @@ class Modeldatapkn extends Model
                 'universitas'   => $data['universitas'],
                 'tahun_pkn'     => $data['tahun_pkn']
             ]);
+    }
+
+    public function AllDataByCabang($cabang)
+    {
+        return $this->db->table($this->table)
+            ->where('cabang', $cabang)
+            ->get()
+            ->getResultArray();
     }
 }
