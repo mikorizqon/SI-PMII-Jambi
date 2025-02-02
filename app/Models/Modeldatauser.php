@@ -24,17 +24,22 @@ class Modeldatauser extends Model
             ->get()->getRowArray();
     }
 
-    public function UpdateData($data)
+    public function deletedata($data)
     {
         $this->db->table('tbl_user')
-            ->where('nama_user', $data['nama_user'])
-            ->update($data);
+            ->where('nama_user', $data['nama'])
+            ->delete($data);
     }
 
-    public function DeleteData($data)
+    public function updatedata($data)
     {
-        $this->db->table('tbl_user')
-            ->where('nama_user', $data['nama_user'])
-            ->delete($data);
+        return $this->db->table('tbl_user')
+            ->where('nama_user', $data['nama_lama'])
+            ->update([
+                'nama_user' => $data['nama_user'],
+                'username' => $data['username'],
+                'password' => $data['password'],
+                'level'    => $data['level']
+            ]);
     }
 }

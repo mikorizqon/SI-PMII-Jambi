@@ -7,6 +7,7 @@ use App\Models\Modeldataalumni;
 
 class dataalumni extends BaseController
 {
+    protected $Modeldataalumni;
 
     public function __construct()
     {
@@ -25,7 +26,7 @@ class dataalumni extends BaseController
         ];
         return view('v_template_admin', $data);
     }
-    
+
     public function Input()
     {
         $data = [
@@ -92,34 +93,34 @@ class dataalumni extends BaseController
                 ]
             ],
         ])) {
-                $data= [
-                    'nik'            => $this->request->getPost('nik'),
-                    'nama'           => $this->request->getPost('nama'),
-                    'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
-                    'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'cabang'         => $this->request->getPost('cabang'),
-                    'universitas'    => $this->request->getPost('universitas'),
-                    'propesi'   => $this->request->getPost('propesi'),
-                ];
-                $this->Modeldataalumni->InsertData($data);
-                session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
-                return redirect()->to('dataalumni');   
-
-                //jika valid
-            } else {
-                return redirect()->to('dataalumni/Input')->withInput();
-            }
-        }
-
-        public function Edit($nama)
-        {
             $data = [
-                'judul'      => 'Data alumni',
-                'subjudul'   => 'Edit Data',
-                'menu'       => 'master-data',
-                'submenu'    => 'dataalumni',
-                'page'       => 'dataalumni/v_edit',
-                'dataalumni' => $this->Modeldataalumni->DetailData($nama),
+                'nik'            => $this->request->getPost('nik'),
+                'nama'           => $this->request->getPost('nama'),
+                'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
+                'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
+                'cabang'         => $this->request->getPost('cabang'),
+                'universitas'    => $this->request->getPost('universitas'),
+                'propesi'   => $this->request->getPost('propesi'),
+            ];
+            $this->Modeldataalumni->InsertData($data);
+            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
+            return redirect()->to('dataalumni');
+
+            //jika valid
+        } else {
+            return redirect()->to('dataalumni/Input')->withInput();
+        }
+    }
+
+    public function Edit($nama)
+    {
+        $data = [
+            'judul'      => 'Data alumni',
+            'subjudul'   => 'Edit Data',
+            'menu'       => 'master-data',
+            'submenu'    => 'dataalumni',
+            'page'       => 'dataalumni/v_edit',
+            'dataalumni' => $this->Modeldataalumni->DetailData($nama),
         ];
         return view('v_template_admin', $data);
     }
@@ -177,33 +178,30 @@ class dataalumni extends BaseController
                 ]
             ],
         ])) {
-                $data= [
-                    'nama'=> $nama,
-                    'nik'            => $this->request->getPost('nik'),
-                    'nama'           => $this->request->getPost('nama'),
-                    'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
-                    'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
-                    'cabang' => $this->request->getPost('cabang'),
-                    'universitas'    => $this->request->getPost('universitas'),
-                    'propesi'   => $this->request->getPost('propesi'),
-                ];
-                $this->Modeldataalumni->updatedata($data);
-                session()->setFlashdata('update', 'Data Berhasil Diupdate');
-                return redirect()->to('dataalumni');   
-
-                //jika valid
-            } else {
-                return redirect()->to('dataalumni/Input')->withInput();
-            }
-        }
-
-        public function deletedata($nama)
-        {
-            $data= [
-                'nama'=> $nama,
+            $data = [
+                'nama_lama'      => $nama,
+                'nik'            => $this->request->getPost('nik'),
+                'nama'           => $this->request->getPost('nama'),
+                'tempat_lahir'   => $this->request->getPost('tempat_lahir'),
+                'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
+                'cabang'         => $this->request->getPost('cabang'),
+                'universitas'    => $this->request->getPost('universitas'),
+                'propesi'        => $this->request->getPost('propesi'),
             ];
-            $this->Modeldataalumni->deletedata($data);
-            session()->setFlashdata('delete', 'Data Berhasil Didelete');
+            $this->Modeldataalumni->updatedata($data);
+            session()->setFlashdata('update', 'Data berhasil diperbarui!');
             return redirect()->to('dataalumni');
         }
+        return redirect()->to('dataalumni')->withInput();
+    }
+
+    public function deletedata($nama)
+    {
+        $data = [
+            'nama' => $nama,
+        ];
+        $this->Modeldataalumni->deletedata($data);
+        session()->setFlashdata('delete', 'Data Berhasil Didelete');
+        return redirect()->to('dataalumni');
+    }
 }
