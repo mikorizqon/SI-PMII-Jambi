@@ -40,8 +40,8 @@
                         <th>NO</th>
                         <th>Nama User</th>
                         <th>User Name</th>
-                        
                         <th>Level</th>
+                        <th>Cabang</th>
                         <th>Aksi</th>
                     <tr>
                     
@@ -53,6 +53,7 @@
                         <td class=><?= $d['username']?></td>
                         
                         <td class="text-center"><?= $d['level']?></td>
+                        <td class="text-center"><?= $d['cabang']?></td>
                         <td class="text-center">
                             <div class="btn-group">
                                 <a href="<?= base_url('datauser/edit/' . $d['nama_user']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>

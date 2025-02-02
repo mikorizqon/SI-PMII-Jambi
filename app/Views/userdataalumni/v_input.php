@@ -9,7 +9,7 @@
             session();
             $validasi = \Config\Services::validation();
             ?>
-            <?php echo form_open('userdataalumni/insertdata') ?>
+            <?php echo form_open('dataalumni/insertdata') ?>
             <div class="card-body">
 
             <div class="form-group">
@@ -59,7 +59,7 @@
             </div>
             <div class="card-footer">
               <button type="submit" class="btn btn-primary btn-flat">Simpan</button>
-              <a href="<?= base_url('userdataalumni') ?>" class="btn btn-success btn-flat">Kembali</a>
+              <a href="<?= base_url('dataalumni') ?>" class="btn btn-success btn-flat">Kembali</a>
             </div>
             <?php echo form_close() ?>
           </div>

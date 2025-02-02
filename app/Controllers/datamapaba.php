@@ -111,7 +111,7 @@ class datamapaba extends BaseController
         }
     }
 
-    public function Edit($nama)
+    public function Edit($id)
     {
         $data = [
             'judul'      => 'Data Mapaba',
@@ -119,12 +119,12 @@ class datamapaba extends BaseController
             'menu'       => 'master-data',
             'submenu'    => 'datamapaba',
             'page'       => 'datamapaba/v_edit',
-            'datamapaba' => $this->Modeldatamapaba->DetailData($nama),
+            'datamapaba' => $this->Modeldatamapaba->DetailData($id),
         ];
         return view('v_template_admin', $data);
     }
 
-    public function updatedata($nama)
+    public function updatedata($id)
     {
         if ($this->validate([
             'nik' => [
@@ -178,7 +178,7 @@ class datamapaba extends BaseController
             ],
         ])) {
             $data = [
-                'nama' => $nama,
+                'id' => $id,
                 'nik'            => $this->request->getPost('nik'),
                 'nama'           => $this->request->getPost('nama'),
                 'tempat_lahir'   => $this->request->getPost('tempat_lahir'),

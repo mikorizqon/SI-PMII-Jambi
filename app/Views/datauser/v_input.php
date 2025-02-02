@@ -26,7 +26,7 @@
 
                 <div class="form-group">
                     <label>Password</label>
-                    <input name="password" class="form-control">
+                    <input type="password" name="password" class="form-control">
                     <p class="text-danger"><?= $validasi->getError('password') ?></p>
                 </div>
 
@@ -34,6 +34,11 @@
                     <label>Level</label>
                     <input name="level" class="form-control">
                     <p class="text-danger"><?= $validasi->getError('level') ?></p>
+                </div>
+            <div class="form-group">
+                    <label>Cabang</label>
+                    <input name="cabang" class="form-control">
+                    <p class="text-danger"><?= $validasi->getError('cabang') ?></p>
                 </div>
 
             </div>

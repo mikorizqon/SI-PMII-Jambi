@@ -51,7 +51,7 @@
                 </div>
             
             <div class="form-group">
-                    <label>Tahun pkd</label>
+                    <label>Tahun PKD</label>
                     <input name="tahun_pkd" value="<?= $datapkd['tahun_pkd']?>" class="form-control">
                     <p class="text-danger"><?= $validasi->getError('tahun_pkd') ?></p>
                 </div>

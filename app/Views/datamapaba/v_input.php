@@ -37,12 +37,6 @@
       </div>
 
       <div class="form-group">
-        <label>Alamat Tinggal</label>
-        <input name="alamat_tinggal" class="form-control">
-        <p class="text-danger"><?= $validasi->getError('alamat_tinggal') ?></p>
-      </div>
-
-      <div class="form-group">
         <label>Cabang</label>
         <input name="cabang" class="form-control">
         <p class="text-danger"><?= $validasi->getError('cabang') ?></p>

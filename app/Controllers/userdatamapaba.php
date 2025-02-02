@@ -23,7 +23,7 @@ class Userdatamapaba extends BaseController
         log_message('info', 'Data yang diambil: ' . print_r($userdatamapaba, true)); // Cek data yang diambil
 
         $data = [
-            'judul' => 'Data Mapaba',
+            'judul' => 'Data Mapaba', 
             'userdatamapaba' => $userdatamapaba, // Ambil data berdasarkan cabang
             'subjudul' => 'DATA MAPABA',
             'menu' => 'userdatamapaba',
@@ -107,4 +107,13 @@ class Userdatamapaba extends BaseController
         ];
         return view('v_template_user', $data); // Tampilkan view edit
     }
+    public function deletedata($nama)
+        {
+            $data= [
+                'nama'=> $nama,
+            ];
+            $this->Modeldatamapaba->deletedata($data);
+            session()->setFlashdata('delete', 'Data Berhasil Didelete');
+            return redirect()->to('userdatamapaba');
+        }
 }

@@ -17,7 +17,7 @@ class datauser extends BaseController
     {
         $data = [
             'judul'      => 'Master Data',
-            'subjudul'   => 'DATA user',
+            'subjudul'   => 'DATA User',
             'menu'       => 'master-data',
             'submenu'    => 'datauser',
             'page'       => 'datauser/v_index',
@@ -70,6 +70,13 @@ class datauser extends BaseController
                     'required' => '{field} Tidak Boleh Kosong',
                 ]
             ],
+            'cabang' => [
+                'label' => 'cabang',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Tidak Boleh Kosong',
+                ]
+            ],
 
         ])) {
                 $data= [
@@ -77,6 +84,7 @@ class datauser extends BaseController
                     'username'           => $this->request->getPost('username'),
                     'password'   => $this->request->getPost('password'),
                     'level'  => $this->request->getPost('level'),
+                    'cabang'  => $this->request->getPost('cabang'),
 
                 ];
                 $this->Modeldatauser->InsertData($data);

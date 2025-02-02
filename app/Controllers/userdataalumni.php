@@ -23,7 +23,7 @@ class Userdataalumni extends BaseController
         log_message('info', 'Data yang diambil: ' . print_r($userdataalumni, true)); // Cek data yang diambil
 
         $data = [
-            'judul' => 'Data alumni',
+            'judul' => 'Data Alumni',
             'userdataalumni' => $userdataalumni, // Ambil data berdasarkan cabang
             'subjudul' => 'DATA ALUMNI',
             'menu' => 'userdataalumni',
@@ -42,7 +42,7 @@ class Userdataalumni extends BaseController
             'tanggal_lahir' => 'required',
             'cabang' => 'required',
             'universitas' => 'required',
-            'tahun_alumni' => 'required',
+            'profesi' => 'required',
         ])) {
             $data = [
                 'nik' => $this->request->getPost('nik'),
@@ -51,7 +51,7 @@ class Userdataalumni extends BaseController
                 'tanggal_lahir' => $this->request->getPost('tanggal_lahir'),
                 'cabang' => $this->request->getPost('cabang'),
                 'universitas' => $this->request->getPost('universitas'),
-                'tahun_alumni' => $this->request->getPost('tahun_alumni'),
+                'profesi' => $this->request->getPost('profesi'),
             ];
             $this->Modeldataalumni->InsertData($data);
             session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
@@ -70,7 +70,7 @@ class Userdataalumni extends BaseController
             'tanggal_lahir' => 'required',
             'cabang' => 'required',
             'universitas' => 'required',
-            'tahun_alumni' => 'required',
+            'propesi' => 'required',
         ])) {
             $data = [
                 'nama' => $nama,
@@ -80,7 +80,7 @@ class Userdataalumni extends BaseController
                 'tanggal_lahir' => $this->request->getPost('tanggal_lahir'),
                 'cabang' => $this->request->getPost('cabang'),
                 'universitas' => $this->request->getPost('universitas'),
-                'tahun_alumni' => $this->request->getPost('tahun_alumni'),
+                'propesi' => $this->request->getPost('propesi'),
             ];
             $this->Modeldataalumni->updatedata($data);
             session()->setFlashdata('update', 'Data Berhasil Diupdate');
@@ -107,4 +107,14 @@ class Userdataalumni extends BaseController
         ];
         return view('v_template_user', $data); // Tampilkan view edit
     }
+
+    public function deletedata($nama)
+        {
+            $data= [
+                'nama'=> $nama,
+            ];
+            $this->Modeldataalumni->deletedata($data);
+            session()->setFlashdata('delete', 'Data Berhasil Didelete');
+            return redirect()->to('userdataalumni');
+        }
 }

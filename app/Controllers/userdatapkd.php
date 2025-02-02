@@ -23,7 +23,7 @@ class Userdatapkd extends BaseController
         log_message('info', 'Data yang diambil: ' . print_r($userdatapkd, true)); // Cek data yang diambil
 
         $data = [
-            'judul' => 'Data pkd',
+            'judul' => 'Data PKD',
             'userdatapkd' => $userdatapkd, // Ambil data berdasarkan cabang
             'subjudul' => 'DATA PKD',
             'menu' => 'userdatapkd',
@@ -107,4 +107,13 @@ class Userdatapkd extends BaseController
         ];
         return view('v_template_user', $data); // Tampilkan view edit
     }
+    public function deletedata($nama)
+        {
+            $data= [
+                'nama'=> $nama,
+            ];
+            $this->Modeldatapkd->deletedata($data);
+            session()->setFlashdata('delete', 'Data Berhasil Didelete');
+            return redirect()->to('userdatapkd');
+        }
 }

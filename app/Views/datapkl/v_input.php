@@ -32,11 +32,9 @@
 
             <div class="form-group">
                     <label>Tanggal Lahir</label>
-                    <input name="tanggal_lahir" class="form-control">
+                    <input name="tanggal_lahir" type="date" class="form-control">
                     <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
                 </div>
-
-            
             
                 <div class="form-group">
                     <label>Cabang</label>

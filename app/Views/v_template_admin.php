@@ -275,7 +275,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
 
               <li class="nav-item">
-              <a href="<?= base_url('datauser') ?>" class="nav-link <?= $submenu == 'dataalumni' ? 'active' : '' ?>">
+              <a href="<?= base_url('datauser') ?>" class="nav-link <?= $submenu == 'datauser' ? 'active' : '' ?>">
               <i class="fas fa-user-friends"></i>
                   <p>DATA PENGGUNA SISTEM</p>
                 </a>

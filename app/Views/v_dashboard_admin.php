@@ -18,7 +18,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data MAPABA</span>
             <span class="info-box-number">
-              <?= isset($total_users) ? number_format($total_users) : 0 ?>
+              <?= isset($total_datamapaba) ? number_format($total_datamapaba) : 49 ?>
               <small>Kader</small>
             </span>
           </div>
@@ -31,7 +31,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data PKD</span>
             <span class="info-box-number">
-              <?= isset($total_transactions) ? number_format($total_transactions) : 0 ?>
+              <?= isset($total_datapkd) ? number_format($total_datapkd) : 45 ?>
               <small>Kader</small>
             </span>
           </div>
@@ -44,7 +44,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data PKL</span>
             <span class="info-box-number">
-              <?= isset($total_revenue) ? number_format($total_revenue) : 0 ?>
+              <?= isset($total_revenue) ? number_format($total_revenue) : 26 ?>
               <small>Kader</small>
             </span>
           </div>
@@ -57,7 +57,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data PKN</span>
             <span class="info-box-number">
-              <?= isset($total_products) ? number_format($total_products) : 0 ?>
+              <?= isset($total_products) ? number_format($total_products) : 1 ?>
               <small>Kader</small>
             </span>
           </div>
@@ -68,9 +68,9 @@
         <div class="info-box shadow-sm hover-effect">
           <span class="info-box-icon bg-green elevation-1"><i class="fas fa-user-check"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text text-bold">Data ALUMNI</span>
+            <span class="info-box-text text-bold">Data Alumni</span>
             <span class="info-box-number">
-              <?= isset($total_revenue) ? number_format($total_revenue) : 0 ?>
+              <?= isset($total_revenue) ? number_format($total_revenue) : 19 ?>
               <small>Kader</small>
             </span>
           </div>
@@ -81,9 +81,9 @@
         <div class="info-box shadow-sm hover-effect">
           <span class="info-box-icon bg-green elevation-1"><i class="fas fa-users-cog"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text text-bold">Data USER</span>
+            <span class="info-box-text text-bold">Data User</span>
             <span class="info-box-number">
-              <?= isset($total_revenue) ? number_format($total_revenue) : 0 ?>
+              <?= isset($total_revenue) ? number_format($total_revenue) : 10 ?>
               <small>Pengguna</small>
             </span>
           </div>

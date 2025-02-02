@@ -70,7 +70,6 @@
                     <td class=><?= $d['nama'] ?></td>
                     <td class=><?= $d['tempat_lahir'] ?></td>
                     <td class="text-center"><?= $d['tanggal_lahir'] ?></td>
-
                     <td class=><?= $d['cabang'] ?></td>
                     <td class="text-center"><?= $d['universitas'] ?></td>
                     <td class="text-center"><?= $d['tahun_mapaba'] ?></td>

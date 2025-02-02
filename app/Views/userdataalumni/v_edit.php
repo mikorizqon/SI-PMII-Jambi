@@ -50,7 +50,7 @@
                 </div>
             
             <div class="form-group">
-                    <label>propesi</label>
+                    <label>Propesi</label>
                     <input name="propesi" value="<?= $userdataalumni['propesi']?>" class="form-control">
                     <p class="text-danger"><?= $validasi->getError('propesi') ?></p>
                 </div>
