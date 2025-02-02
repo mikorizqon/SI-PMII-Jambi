@@ -47,44 +47,6 @@
             }
 
             ?>
-<<<<<<< HEAD
-            <table class="table table-bordered table-sm" id="dataTable">
-                <tr class="text-center bg-primary">
-                    <th>NO</th>
-                    <th>ID</th>
-                    <th>NIK</th>
-                    <th>Nama</th>
-                    <th>Tempat Lahir</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Cabang</th>
-                    <th>Universitas</th>
-                    <th>Tahun Mapaba</th>
-                    <th>Aksi</th>
-                <tr>
-
-                    <?php $no = 1;
-                    foreach ($datamapaba as $key => $d) { ?>
-                <tr class="search-item">
-                    <td class="text-center"><?= $no++; ?></td>
-                    <td class="text-center"><?= $d['id'] ?></td>
-                    <td class="text-center"><?= $d['nik'] ?></td>
-                    <td class=><?= $d['nama'] ?></td>
-                    <td class=><?= $d['tempat_lahir'] ?></td>
-                    <td class="text-center"><?= $d['tanggal_lahir'] ?></td>
-                    <td class=><?= $d['cabang'] ?></td>
-                    <td class="text-center"><?= $d['universitas'] ?></td>
-                    <td class="text-center"><?= $d['tahun_mapaba'] ?></td>
-                    <td class="text-center">
-                        <div class="btn-group">
-
-                            <a href="<?= base_url('datamapaba/edit/' . $d['nama']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
-                            <a href="<?= base_url('datamapaba/deletedata/' . $d['nama']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
-                        </div>
-                    </td>
-                </tr>
-            <?php } ?>
-            </table>
-=======
             <div class="table-responsive">
                 <table class="table table-hover" id="dataTable">
                     <thead>
@@ -129,7 +91,6 @@
                     </tbody>
                 </table>
             </div>
->>>>>>> a98d4cd55114da562bf9b577ae42c2da7f1fff3b
 
             <div class="mt-3 d-flex justify-content-between align-items-center">
                 <div class="dataTables_info" id="dataInfo" role="status" aria-live="polite">

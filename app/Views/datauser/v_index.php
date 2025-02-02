@@ -14,8 +14,6 @@
     <div class="card-body">
       <?php
 
-      use App\Controllers\datauser;
-
       if (session()->getFlashdata('delete')) : ?>
         <div class="delete-flash" data-message="<?= session()->getFlashdata('delete') ?>"></div>
       <?php endif; ?>
@@ -24,49 +22,17 @@
         <div class="insert-flash" data-message="<?= session()->getFlashdata('insert') ?>"></div>
       <?php endif; ?>
 
-<<<<<<< HEAD
-                ?>
-                <table class="table table-bordered table-sm">
-                    <tr class="text-center bg-primary">
-                        <th>NO</th>
-                        <th>Nama User</th>
-                        <th>User Name</th>
-                        <th>Level</th>
-                        <th>Cabang</th>
-                        <th>Aksi</th>
-                    <tr>
-                    
-                    <?php $no = 1;
-                     foreach ($datauser as $key => $d) { ?>
-                    <tr>
-                        <td class="text-center"><?= $no++; ?></td>
-                        <td class=><?= $d['nama_user']?></td>
-                        <td class=><?= $d['username']?></td>
-                        
-                        <td class="text-center"><?= $d['level']?></td>
-                        <td class="text-center"><?= $d['cabang']?></td>
-                        <td class="text-center">
-                            <div class="btn-group">
-                                <a href="<?= base_url('datauser/edit/' . $d['nama_user']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
-                                <a href="<?= base_url('datauser/deletedata/' . $d['nama_user']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
-                            </div>
-                        </td>
-                    </tr>
-                    <?php } ?>
-                </table>
-=======
       <?php if (session()->getFlashdata('update')) : ?>
         <div class="update-flash" data-message="<?= session()->getFlashdata('update') ?>"></div>
       <?php endif; ?>
->>>>>>> a98d4cd55114da562bf9b577ae42c2da7f1fff3b
 
       <table class="table table-bordered table-sm">
         <tr class="text-center bg-primary">
           <th>NO</th>
           <th>Nama User</th>
           <th>User Name</th>
-
           <th>Level</th>
+          <th>Cabang</th>
           <th>Aksi</th>
         <tr>
 
@@ -76,8 +42,8 @@
           <td class="text-center"><?= $no++; ?></td>
           <td class=><?= $d['nama_user'] ?></td>
           <td class=><?= $d['username'] ?></td>
-
           <td class="text-center"><?= $d['level'] ?></td>
+          <td class="text-center"><?= $d['cabang'] ?></td>
           <td class="text-center">
             <div class="btn-group">
               <a href="<?= base_url('datauser/edit/' . $d['nama_user']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>

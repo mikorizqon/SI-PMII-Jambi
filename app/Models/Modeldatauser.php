@@ -27,7 +27,7 @@ class Modeldatauser extends Model
     public function deletedata($data)
     {
         $this->db->table('tbl_user')
-            ->where('nama_user', $data['nama'])
+            ->where('nama_user', $data['nama_user'])
             ->delete($data);
     }
 
@@ -39,7 +39,8 @@ class Modeldatauser extends Model
                 'nama_user' => $data['nama_user'],
                 'username' => $data['username'],
                 'password' => $data['password'],
-                'level'    => $data['level']
+                'level'    => $data['level'],
+                'cabang'   => $data['cabang']
             ]);
     }
 }

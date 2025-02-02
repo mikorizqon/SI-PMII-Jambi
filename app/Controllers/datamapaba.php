@@ -178,11 +178,8 @@ class datamapaba extends BaseController
             ],
         ])) {
             $data = [
-<<<<<<< HEAD
                 'id' => $id,
-=======
                 'nama_lama'      => $nama,
->>>>>>> a98d4cd55114da562bf9b577ae42c2da7f1fff3b
                 'nik'            => $this->request->getPost('nik'),
                 'nama'           => $this->request->getPost('nama'),
                 'tempat_lahir'   => $this->request->getPost('tempat_lahir'),

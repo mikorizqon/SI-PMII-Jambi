@@ -297,21 +297,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
 
-<<<<<<< HEAD
-              <li class="nav-item">
+            <li class="nav-item">
               <a href="<?= base_url('datauser') ?>" class="nav-link <?= $submenu == 'datauser' ? 'active' : '' ?>">
-              <i class="fas fa-user-friends"></i>
-                  <p>DATA PENGGUNA SISTEM</p>
-                </a>
-              </li>
-=======
+                <i class="fas fa-user-friends"></i>
+                <p>DATA PENGGUNA SISTEM</p>
+              </a>
+            </li>
             <li class="nav-item">
               <a href="<?= base_url('datauser') ?>" class="nav-link <?= $submenu == 'dataalumni' ? 'active' : '' ?>">
                 <i class="fas fa-user-friends"></i>
                 <p>DATA PENGGUNA SISTEM</p>
               </a>
             </li>
->>>>>>> a98d4cd55114da562bf9b577ae42c2da7f1fff3b
 
         </nav>
         <!-- /.sidebar-menu -->
