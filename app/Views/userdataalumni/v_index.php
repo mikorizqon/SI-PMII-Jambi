@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <!-- Tombol Tambah -->
-                    <a href="<?= base_url('userdataalumni/input') ?>" class="btn btn-primary btn-xs ms-2">
+                    <a href="<?= base_url('userdataalumni/insertdata') ?>" class="btn btn-primary btn-xs ms-2">
                         <i class="fas fa-plus"></i> Tambah
                     </a>
                 </div>
@@ -24,6 +24,30 @@
         </div>
         <!-- /.card-header -->
         <div class="card-body">
+            <?php if (session()->getFlashdata('success')) : ?>
+                <script>
+                    Swal.fire({
+                        title: 'Sukses!',
+                        text: '<?= session()->getFlashdata('success') ?>',
+                        icon: 'success',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                </script>
+            <?php endif; ?>
+
+            <?php if (session()->getFlashdata('error')) : ?>
+                <script>
+                    Swal.fire({
+                        title: 'Error!',
+                        text: '<?= session()->getFlashdata('error') ?>',
+                        icon: 'error',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                </script>
+            <?php endif; ?>
+
             <?php
 
             use App\Controllers\dataalumni;
@@ -78,7 +102,7 @@
                         <td class="text-center">
                             <div class="btn-group">
                                 <a href="<?= base_url('userdataalumni/edit/' . $d['nama']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fas fa-pencil-alt"></i></a>
-                                <a href="<?= base_url('userdataalumni/deletedata/' . $d['nama']) ?>" onclick="return confirm('Yakin Hapus Data..?')" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
+                                <a href="<?= base_url('userdataalumni/deletedata/' . $d['nama']) ?>" onclick="return confirmDelete(this.href)" class="btn btn-danger btn-sm btn-flat"><i class="fas fa-trash"></i></a>
                             </div>
                         </td>
                     </tr>
@@ -176,6 +200,94 @@
         font-size: 0.875rem;
         color: #6c757d;
     }
+
+    
+    /* Styling untuk tabel */
+    .table {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9rem;
+        color: #4a5568;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .table th {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+        background-color: #3c8dbc !important;
+        color: white;
+        border: none;
+        padding: 12px 15px;
+    }
+
+    .table td {
+        padding: 12px 15px;
+        border-color: #edf2f7;
+        vertical-align: middle;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    .table tr:hover {
+        background-color: #ebf4ff;
+        transition: all 0.2s ease;
+    }
+
+    /* Styling untuk tombol aksi */
+    .btn-group .btn {
+        padding: 4px 8px;
+        margin: 0 2px;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+    }
+
+    .btn-group .btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .btn-warning {
+        background-color: #f6ad55;
+        border-color: #f6ad55;
+    }
+
+    .btn-danger {
+        background-color: #fc8181;
+        border-color: #fc8181;
+    }
+
+    .btn-warning:hover {
+        background-color: #ed8936;
+        border-color: #ed8936;
+    }
+
+    .btn-danger:hover {
+        background-color: #f56565;
+        border-color: #f56565;
+    }
+
+    /* Styling untuk text alignment */
+    .text-center {
+        font-weight: 500;
+    }
+
+    td:not(.text-center) {
+        font-weight: 400;
+    }
+
+    /* Existing styles remain unchanged */
+    #searchInput {
+        transition: all 0.3s ease;
+        border-color: #dee2e6;
+    }
+
+    
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </style>
 
 <script>
@@ -261,4 +373,22 @@
         currentPage = 1;
         updatePagination();
     });
+
+    function confirmDelete(url) {
+        Swal.fire({
+            title: 'Apakah Anda yakin?',
+            text: "Data yang dihapus tidak dapat dikembalikan!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya, hapus!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = url;
+            }
+        });
+        return false;
+    }
 </script>

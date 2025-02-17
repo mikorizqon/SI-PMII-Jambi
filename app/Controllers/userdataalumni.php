@@ -36,13 +36,48 @@ class Userdataalumni extends BaseController
     public function insertdata()
     {
         if ($this->validate([
-            'nik' => 'required',
-            'nama' => 'required',
-            'tempat_lahir' => 'required',
-            'tanggal_lahir' => 'required',
-            'cabang' => 'required',
-            'universitas' => 'required',
-            'profesi' => 'required',
+            'nik' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'NIK harus diisi'
+                ]
+            ],
+            'nama' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama harus diisi'
+                ]
+            ],
+            'tempat_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tempat lahir harus diisi'
+                ]
+            ],
+            'tanggal_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tanggal lahir harus diisi'
+                ]
+            ],
+            'cabang' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Cabang harus diisi'
+                ]
+            ],
+            'universitas' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Universitas harus diisi'
+                ]
+            ],
+            'propesi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Propesi harus diisi'
+                ]
+            ],
         ])) {
             $data = [
                 'nik' => $this->request->getPost('nik'),
@@ -51,12 +86,25 @@ class Userdataalumni extends BaseController
                 'tanggal_lahir' => $this->request->getPost('tanggal_lahir'),
                 'cabang' => $this->request->getPost('cabang'),
                 'universitas' => $this->request->getPost('universitas'),
-                'profesi' => $this->request->getPost('profesi'),
+                'propesi' => $this->request->getPost('propesi'),
+                'created_at' => date('Y-m-d H:i:s')
             ];
-            $this->Modeldataalumni->InsertData($data);
-            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
-            return redirect()->to('userdataalumni');
+
+            try {
+                if ($this->Modeldataalumni->InsertData($data)) {
+                    session()->setFlashdata('success', 'Data berhasil ditambahkan!');
+                    return redirect()->to('userdataalumni');
+                } else {
+                    session()->setFlashdata('error', 'Gagal menambahkan data!');
+                    return redirect()->to('userdataalumni/input')->withInput();
+                }
+            } catch (\Exception $e) {
+                log_message('error', 'Error saat insert data: ' . $e->getMessage());
+                session()->setFlashdata('error', 'Terjadi kesalahan saat menyimpan data');
+                return redirect()->to('userdataalumni/input')->withInput();
+            }
         } else {
+            session()->setFlashdata('error', $this->validator->listErrors());
             return redirect()->to('userdataalumni/input')->withInput();
         }
     }
@@ -73,7 +121,7 @@ class Userdataalumni extends BaseController
             'propesi' => 'required',
         ])) {
             $data = [
-                'nama' => $nama,
+                'nama_lama' => $nama,
                 'nik' => $this->request->getPost('nik'),
                 'nama' => $this->request->getPost('nama'),
                 'tempat_lahir' => $this->request->getPost('tempat_lahir'),
@@ -82,9 +130,14 @@ class Userdataalumni extends BaseController
                 'universitas' => $this->request->getPost('universitas'),
                 'propesi' => $this->request->getPost('propesi'),
             ];
-            $this->Modeldataalumni->updatedata($data);
-            session()->setFlashdata('update', 'Data Berhasil Diupdate');
-            return redirect()->to('userdataalumni');
+
+            if ($this->Modeldataalumni->updateDataUser($data)) {
+                session()->setFlashdata('success', 'Data berhasil diperbarui!');
+                return redirect()->to('userdataalumni');
+            } else {
+                session()->setFlashdata('error', 'Gagal memperbarui data!');
+                return redirect()->to('userdataalumni/edit/' . $nama)->withInput();
+            }
         } else {
             return redirect()->to('userdataalumni/edit/' . $nama)->withInput();
         }
@@ -109,12 +162,35 @@ class Userdataalumni extends BaseController
     }
 
     public function deletedata($nama)
-        {
-            $data= [
-                'nama'=> $nama,
+    {
+        try {
+            $data = [
+                'nama' => $nama,
             ];
-            $this->Modeldataalumni->deletedata($data);
-            session()->setFlashdata('delete', 'Data Berhasil Didelete');
-            return redirect()->to('userdataalumni');
+            
+            if ($this->Modeldataalumni->DeleteData($data)) {
+                session()->setFlashdata('success', 'Data berhasil dihapus!');
+            } else {
+                session()->setFlashdata('error', 'Gagal menghapus data!');
+            }
+            
+        } catch (\Exception $e) {
+            session()->setFlashdata('error', 'Terjadi kesalahan saat menghapus data!');
+            log_message('error', 'Delete error: ' . $e->getMessage());
         }
+        
+        return redirect()->to('userdataalumni');
+    }
+
+    public function input()
+    {
+        $data = [
+            'judul' => 'Input Data Alumni',
+            'subjudul' => 'INPUT DATA ALUMNI',
+            'menu' => 'userdataalumni',
+            'submenu' => 'userdataalumni',
+            'page' => 'userdataalumni/v_input',
+        ];
+        return view('v_template_user', $data);
+    }
 }

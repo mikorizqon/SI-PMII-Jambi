@@ -1,67 +1,61 @@
 <div class="col-md-12">
-          <div class="card card-outline card-info">
-            <div class="card-header">
-              <h3 class="card-title">
-                <?= $subjudul ?>
-              </h3>
-            </div>
-            <?php
-            session();
-            $validasi = \Config\Services::validation();
+    <div class="card card-outline card-primary">
+        <div class="card-header">
+            <h3 class="card-title"><?= $judul ?></h3>
+        </div>
+        <div class="card-body">
+            <?php 
+            // Tampilkan pesan error validasi jika ada
+            $validation = \Config\Services::validation();
+            if ($validation->getErrors()) {
+                echo '<div class="alert alert-danger">';
+                echo $validation->listErrors();
+                echo '</div>';
+            }
             ?>
-            <?php echo form_open('dataalumni/insertdata') ?>
-            <div class="card-body">
-
-            <div class="form-group">
+            
+            <form action="<?= base_url('userdataalumni/insertdata') ?>" method="POST">
+                <?= csrf_field() ?>
+                <div class="form-group">
                     <label>NIK</label>
-                    <input name="nik" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('nik') ?></p>
+                    <input name="nik" class="form-control" value="<?= old('nik') ?>" placeholder="Masukkan NIK">
                 </div>
-
-            <div class="form-group">
+                
+                <div class="form-group">
                     <label>Nama</label>
-                    <input name="nama" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('nama') ?></p>
+                    <input name="nama" class="form-control" value="<?= old('nama') ?>" placeholder="Masukkan Nama">
                 </div>
-
+                
                 <div class="form-group">
                     <label>Tempat Lahir</label>
-                    <input name="tempat_lahir" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('tempat_lahir') ?></p>
+                    <input name="tempat_lahir" class="form-control" value="<?= old('tempat_lahir') ?>" placeholder="Masukkan Tempat Lahir">
                 </div>
-
-            <div class="form-group">
+                
+                <div class="form-group">
                     <label>Tanggal Lahir</label>
-                    <input name="tanggal_lahir" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
+                    <input type="date" name="tanggal_lahir" class="form-control" value="<?= old('tanggal_lahir') ?>">
                 </div>
-
-          
-
+                
                 <div class="form-group">
                     <label>Cabang</label>
-                    <input name="cabang" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('cabang') ?></p>
+                    <input name="cabang" class="form-control" value="<?= old('cabang') ?>" placeholder="Masukkan Cabang">
                 </div>
-
-            <div class="form-group">
+                
+                <div class="form-group">
                     <label>Universitas</label>
-                    <input name="universitas" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('universitas') ?></p>
+                    <input name="universitas" class="form-control" value="<?= old('universitas') ?>" placeholder="Masukkan Universitas">
                 </div>
-            
-            <div class="form-group">
-                    <label>propesi</label>
-                    <input name="propesi" class="form-control">
-                    <p class="text-danger"><?= $validasi->getError('propesi') ?></p>
+                
+                <div class="form-group">
+                    <label>Profesi</label>
+                    <input name="propesi" class="form-control" value="<?= old('propesi') ?>" placeholder="Masukkan Profesi">
                 </div>
-
-            </div>
-            <div class="card-footer">
-              <button type="submit" class="btn btn-primary btn-flat">Simpan</button>
-              <a href="<?= base_url('dataalumni') ?>" class="btn btn-success btn-flat">Kembali</a>
-            </div>
-            <?php echo form_close() ?>
-          </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <a href="<?= base_url('userdataalumni') ?>" class="btn btn-success">Kembali</a>
+                </div>
+            </form>
         </div>
-        <!-- /.col-->
+    </div>
+</div>

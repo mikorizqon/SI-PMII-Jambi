@@ -178,6 +178,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       color: var(--primary-blue);
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -316,6 +317,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div>
     </div>
   </div>
+
+  <!-- Tambahkan sebelum closing tag body -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

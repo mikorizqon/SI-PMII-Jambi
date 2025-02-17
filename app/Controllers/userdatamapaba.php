@@ -36,13 +36,49 @@ class Userdatamapaba extends BaseController
     public function insertdata()
     {
         if ($this->validate([
-            'nik' => 'required',
-            'nama' => 'required',
-            'tempat_lahir' => 'required',
-            'tanggal_lahir' => 'required',
-            'cabang' => 'required',
-            'universitas' => 'required',
-            'tahun_mapaba' => 'required',
+            'nik' => [
+                'rules' => 'required|is_unique[tbl_data-mapaba.nik]',
+                'errors' => [
+                    'required' => 'NIK harus diisi',
+                    'is_unique' => 'NIK sudah terdaftar'
+                ]
+            ],
+            'nama' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama harus diisi'
+                ]
+            ],
+            'tempat_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tempat lahir harus diisi'
+                ]
+            ],
+            'tanggal_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tanggal lahir harus diisi'
+                ]
+            ],
+            'cabang' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Cabang harus diisi'
+                ]
+            ],
+            'universitas' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Universitas harus diisi'
+                ]
+            ],
+            'tahun_mapaba' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tahun Mapaba harus diisi'
+                ]
+            ],
         ])) {
             $data = [
                 'nik' => $this->request->getPost('nik'),
@@ -53,10 +89,16 @@ class Userdatamapaba extends BaseController
                 'universitas' => $this->request->getPost('universitas'),
                 'tahun_mapaba' => $this->request->getPost('tahun_mapaba'),
             ];
-            $this->Modeldatamapaba->InsertData($data);
-            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
-            return redirect()->to('userdatamapaba');
+
+            if ($this->Modeldatamapaba->insertDataUser($data)) {
+                session()->setFlashdata('success', 'Data berhasil ditambahkan!');
+                return redirect()->to('userdatamapaba');
+            } else {
+                session()->setFlashdata('error', 'Gagal menambahkan data!');
+                return redirect()->to('userdatamapaba/input')->withInput();
+            }
         } else {
+            // Jika validasi gagal, kembali ke form dengan error
             return redirect()->to('userdatamapaba/input')->withInput();
         }
     }
@@ -73,7 +115,7 @@ class Userdatamapaba extends BaseController
             'tahun_mapaba' => 'required',
         ])) {
             $data = [
-                'nama' => $nama,
+                'nama_lama' => $nama,
                 'nik' => $this->request->getPost('nik'),
                 'nama' => $this->request->getPost('nama'),
                 'tempat_lahir' => $this->request->getPost('tempat_lahir'),
@@ -82,9 +124,14 @@ class Userdatamapaba extends BaseController
                 'universitas' => $this->request->getPost('universitas'),
                 'tahun_mapaba' => $this->request->getPost('tahun_mapaba'),
             ];
-            $this->Modeldatamapaba->updatedata($data);
-            session()->setFlashdata('update', 'Data Berhasil Diupdate');
-            return redirect()->to('userdatamapaba');
+
+            if ($this->Modeldatamapaba->updateDataUser($data)) {
+                session()->setFlashdata('update', 'Data berhasil diperbarui!');
+                return redirect()->to('userdatamapaba');
+            } else {
+                session()->setFlashdata('error', 'Gagal memperbarui data!');
+                return redirect()->to('userdatamapaba/edit/' . $nama)->withInput();
+            }
         } else {
             return redirect()->to('userdatamapaba/edit/' . $nama)->withInput();
         }
@@ -107,13 +154,37 @@ class Userdatamapaba extends BaseController
         ];
         return view('v_template_user', $data); // Tampilkan view edit
     }
+
     public function deletedata($nama)
-        {
-            $data= [
-                'nama'=> $nama,
+    {
+        try {
+            $data = [
+                'nama' => $nama,
             ];
-            $this->Modeldatamapaba->deletedata($data);
-            session()->setFlashdata('delete', 'Data Berhasil Didelete');
-            return redirect()->to('userdatamapaba');
+            
+            if ($this->Modeldatamapaba->DeleteData($data)) {
+                session()->setFlashdata('success', 'Data berhasil dihapus!');
+            } else {
+                session()->setFlashdata('error', 'Gagal menghapus data!');
+            }
+            
+        } catch (\Exception $e) {
+            session()->setFlashdata('error', 'Terjadi kesalahan saat menghapus data!');
+            log_message('error', 'Delete error: ' . $e->getMessage());
         }
+        
+        return redirect()->to('userdatamapaba');
+    }
+
+    public function input()
+    {
+        $data = [
+            'judul' => 'Input Data Mapaba',
+            'subjudul' => 'INPUT DATA MAPABA',
+            'menu' => 'userdatamapaba',
+            'submenu' => 'userdatamapaba',
+            'page' => 'userdatamapaba/v_input',
+        ];
+        return view('v_template_user', $data);
+    }
 }

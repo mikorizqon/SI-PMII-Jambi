@@ -6,7 +6,7 @@
             <div class="col-12">
                 <div class="alert alert-success">
                     <h5><i class="icon fas fa-check"></i> Selamat Datang Sahabat! <?= session()->get('nama_user') ?></h5>
-                    <p class="mb-0">Anda login sebagai Administrator. Kelola sistem dengan bijak.</p>
+                    <p class="mb-0">Anda login sebagai Pengurus Cabang <?= session()->get('cabang') ?>. Kelola data kader dengan bijak.</p>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@
                     <div class="info-box-content">
                         <span class="info-box-text text-bold">Data MAPABA</span>
                         <span class="info-box-number">
-                            <?= isset($total_users) ? number_format($total_users) : 8 ?>
+                            <?= $total_mapaba ?>
                             <small>Kader</small>
                         </span>
                     </div>
@@ -31,7 +31,7 @@
                     <div class="info-box-content">
                         <span class="info-box-text text-bold">Data PKD</span>
                         <span class="info-box-number">
-                            <?= isset($total_transactions) ? number_format($total_transactions) : 6 ?>
+                            <?= $total_pkd ?>
                             <small>Kader</small>
                         </span>
                     </div>
@@ -44,7 +44,7 @@
                     <div class="info-box-content">
                         <span class="info-box-text text-bold">Data PKL</span>
                         <span class="info-box-number">
-                            <?= isset($total_revenue) ? number_format($total_revenue) : 5 ?>
+                            <?= $total_pkl ?>
                             <small>Kader</small>
                         </span>
                     </div>
@@ -57,7 +57,7 @@
                     <div class="info-box-content">
                         <span class="info-box-text text-bold">Data PKN</span>
                         <span class="info-box-number">
-                            <?= isset($total_products) ? number_format($total_products) : 1 ?>
+                            <?= $total_pkn ?>
                             <small>Kader</small>
                         </span>
                     </div>
@@ -70,13 +70,12 @@
                     <div class="info-box-content">
                         <span class="info-box-text text-bold">Data ALUMNI</span>
                         <span class="info-box-number">
-                            <?= isset($total_revenue) ? number_format($total_revenue) : 3 ?>
+                            <?= $total_alumni ?>
                             <small>Kader</small>
                         </span>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

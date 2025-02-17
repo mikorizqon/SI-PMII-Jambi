@@ -33,14 +33,25 @@ class Modeldatauser extends Model
 
     public function updatedata($data)
     {
-        return $this->db->table('tbl_user')
-            ->where('nama_user', $data['nama_lama'])
-            ->update([
-                'nama_user' => $data['nama_user'],
-                'username' => $data['username'],
-                'password' => $data['password'],
-                'level'    => $data['level'],
-                'cabang'   => $data['cabang']
-            ]);
+        try {
+            $result = $this->db->table('tbl_user')
+                ->where('nama_user', $data['nama_lama'])
+                ->update([
+                    'nama_user' => $data['nama_user'],
+                    'username' => $data['username'],
+                    'password' => $data['password'],
+                    'level'    => $data['level'],
+                    'cabang'   => $data['cabang']
+                ]);
+            
+            // Log untuk debugging
+            log_message('info', 'Update Data User: ' . print_r($data, true));
+            log_message('info', 'Query: ' . $this->db->getLastQuery());
+            
+            return $result;
+        } catch (\Exception $e) {
+            log_message('error', 'Error updating user data: ' . $e->getMessage());
+            return false;
+        }
     }
 }

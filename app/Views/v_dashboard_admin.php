@@ -18,7 +18,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data MAPABA</span>
             <span class="info-box-number">
-              <?= isset($total_datamapaba) ? number_format($total_datamapaba) : 49 ?>
+              <?= $total_mapaba ?>
               <small>Kader</small>
             </span>
           </div>
@@ -31,7 +31,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data PKD</span>
             <span class="info-box-number">
-              <?= isset($total_datapkd) ? number_format($total_datapkd) : 45 ?>
+              <?= $total_pkd ?>
               <small>Kader</small>
             </span>
           </div>
@@ -44,7 +44,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data PKL</span>
             <span class="info-box-number">
-              <?= isset($total_revenue) ? number_format($total_revenue) : 26 ?>
+              <?= $total_pkl ?>
               <small>Kader</small>
             </span>
           </div>
@@ -57,7 +57,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data PKN</span>
             <span class="info-box-number">
-              <?= isset($total_products) ? number_format($total_products) : 1 ?>
+              <?= $total_pkn ?>
               <small>Kader</small>
             </span>
           </div>
@@ -70,7 +70,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data Alumni</span>
             <span class="info-box-number">
-              <?= isset($total_revenue) ? number_format($total_revenue) : 19 ?>
+              <?= $total_alumni ?>
               <small>Kader</small>
             </span>
           </div>
@@ -83,7 +83,7 @@
           <div class="info-box-content">
             <span class="info-box-text text-bold">Data User</span>
             <span class="info-box-number">
-              <?= isset($total_revenue) ? number_format($total_revenue) : 10 ?>
+              <?= $total_users ?>
               <small>Pengguna</small>
             </span>
           </div>

@@ -7,49 +7,56 @@
     session();
     $validasi = \Config\Services::validation();
     ?>
+
+    <?php if (session()->getFlashdata('error')): ?>
+        <div class="alert alert-danger">
+            <?= session()->getFlashdata('error') ?>
+        </div>
+    <?php endif; ?>
+
     <?php echo form_open('userdatamapaba/insertdata') ?>
     <div class="card-body">
 
       <div class="form-group">
         <label>NIK</label>
-        <input name="nik" class="form-control">
-        <p class="text-danger"><?= $validasi->getError('nik') ?></p>
+        <input name="nik" class="form-control" value="<?= old('nik') ?>">
+        <p class="text-danger"><?= validation_show_error('nik') ?></p>
       </div>
 
       <div class="form-group">
         <label>Nama</label>
-        <input name="nama" class="form-control">
-        <p class="text-danger"><?= $validasi->getError('nama') ?></p>
+        <input name="nama" class="form-control" value="<?= old('nama') ?>">
+        <p class="text-danger"><?= validation_show_error('nama') ?></p>
       </div>
 
       <div class="form-group">
         <label>Tempat Lahir</label>
-        <input name="tempat_lahir" class="form-control">
-        <p class="text-danger"><?= $validasi->getError('tempat_lahir') ?></p>
+        <input name="tempat_lahir" class="form-control" value="<?= old('tempat_lahir') ?>">
+        <p class="text-danger"><?= validation_show_error('tempat_lahir') ?></p>
       </div>
 
       <div class="form-group">
         <label>Tanggal Lahir</label>
-        <input name="tanggal_lahir" type="date" class="form-control">
-        <p class="text-danger"><?= $validasi->getError('tanggal_lahir') ?></p>
+        <input name="tanggal_lahir" type="date" class="form-control" value="<?= old('tanggal_lahir') ?>">
+        <p class="text-danger"><?= validation_show_error('tanggal_lahir') ?></p>
       </div>
 
       <div class="form-group">
         <label>Cabang</label>
-        <input name="cabang" class="form-control">
-        <p class="text-danger"><?= $validasi->getError('cabang') ?></p>
+        <input name="cabang" class="form-control" value="<?= old('cabang') ?>">
+        <p class="text-danger"><?= validation_show_error('cabang') ?></p>
       </div>
 
       <div class="form-group">
         <label>Universitas</label>
-        <input name="universitas" class="form-control">
-        <p class="text-danger"><?= $validasi->getError('universitas') ?></p>
+        <input name="universitas" class="form-control" value="<?= old('universitas') ?>">
+        <p class="text-danger"><?= validation_show_error('universitas') ?></p>
       </div>
 
       <div class="form-group">
         <label>Tahun Mapaba</label>
-        <input name="tahun_mapaba" class="form-control">
-        <p class="text-danger"><?= $validasi->getError('tahun_mapaba') ?></p>
+        <input name="tahun_mapaba" class="form-control" value="<?= old('tahun_mapaba') ?>">
+        <p class="text-danger"><?= validation_show_error('tahun_mapaba') ?></p>
       </div>
 
     </div>

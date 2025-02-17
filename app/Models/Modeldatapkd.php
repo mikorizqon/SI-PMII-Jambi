@@ -16,9 +16,33 @@ class Modeldatapkd extends Model
             ->get()->getResultArray();
     }
 
-    public function InsertData($data)
+    public function AllDataByCabang($cabang)
     {
-        $this->db->table('tbl_data-pkd')->insert($data);
+        $builder = $this->db->table('tbl_data-pkd');
+        $builder->where('cabang', $cabang);
+        $builder->orderBy('created_at', 'DESC');
+        $query = $builder->get();
+        log_message('info', 'Query: ' . $this->db->getLastQuery());
+        return $query->getResultArray();
+    }
+
+    public function insertDataUser($data)
+    {
+        try {
+            // Tambahkan created_at
+            $data['created_at'] = date('Y-m-d H:i:s');
+            
+            $result = $this->db->table('tbl_data-pkd')->insert($data);
+
+            // Log untuk debugging
+            log_message('info', 'Insert Data User: ' . print_r($data, true));
+            log_message('info', 'Query: ' . $this->db->getLastQuery());
+            
+            return $result;
+        } catch (\Exception $e) {
+            log_message('error', 'Error inserting data: ' . $e->getMessage());
+            return false;
+        }
     }
 
     public function DetailData($nama)
@@ -28,33 +52,89 @@ class Modeldatapkd extends Model
             ->get()->getRowArray();
     }
 
-    public function deletedata($data)
+    public function updateDataUser($data)
     {
-        $this->db->table('tbl_data-pkd')
-            ->where('nama', $data['nama'])
-            ->delete($data);
+        try {
+            $result = $this->db->table('tbl_data-pkd')
+                ->where('nama', $data['nama_lama'])
+                ->update([
+                    'nik'           => $data['nik'],
+                    'nama'          => $data['nama'],
+                    'tempat_lahir'  => $data['tempat_lahir'],
+                    'tanggal_lahir' => $data['tanggal_lahir'],
+                    'cabang'        => $data['cabang'],
+                    'universitas'   => $data['universitas'],
+                    'tahun_pkd'     => $data['tahun_pkd']
+                ]);
+
+            log_message('info', 'Update Data User: ' . print_r($data, true));
+            log_message('info', 'Query: ' . $this->db->getLastQuery());
+            
+            return $result;
+        } catch (\Exception $e) {
+            log_message('error', 'Error updating data: ' . $e->getMessage());
+            return false;
+        }
+    }
+
+    public function DeleteData($data)
+    {
+        try {
+            $result = $this->db->table('tbl_data-pkd')
+                ->where('nama', $data['nama'])
+                ->delete();
+            
+            log_message('info', 'Delete Data: ' . print_r($data, true));
+            log_message('info', 'Query: ' . $this->db->getLastQuery());
+            
+            return $result;
+        } catch (\Exception $e) {
+            log_message('error', 'Error deleting data: ' . $e->getMessage());
+            return false;
+        }
     }
 
     public function updatedata($data)
     {
-        return $this->db->table($this->table)
-            ->where('nama', $data['nama'])
-            ->update([
-                'nik'           => $data['nik'],
-                'nama'          => $data['nama'],
-                'tempat_lahir'  => $data['tempat_lahir'],
-                'tanggal_lahir' => $data['tanggal_lahir'],
-                'cabang'        => $data['cabang'],
-                'universitas'   => $data['universitas'],
-                'tahun_pkd'     => $data['tahun_pkd']
-            ]);
+        try {
+            $result = $this->db->table('tbl_data-pkd')
+                ->where('nama', $data['nama_lama'])
+                ->update([
+                    'nik'           => $data['nik'],
+                    'nama'          => $data['nama'],
+                    'tempat_lahir'  => $data['tempat_lahir'],
+                    'tanggal_lahir' => $data['tanggal_lahir'],
+                    'cabang'        => $data['cabang'],
+                    'universitas'   => $data['universitas'],
+                    'tahun_pkd'     => $data['tahun_pkd']
+                ]);
+
+            log_message('info', 'Update Data PKD: ' . print_r($data, true));
+            log_message('info', 'Query: ' . $this->db->getLastQuery());
+            
+            return $result;
+        } catch (\Exception $e) {
+            log_message('error', 'Error updating data: ' . $e->getMessage());
+            return false;
+        }
     }
 
-    public function AllDataByCabang($cabang)
+    public function InsertData($data)
     {
-        return $this->db->table($this->table)
-            ->where('cabang', $cabang)
-            ->get()
-            ->getResultArray();
+        try {
+            // Tambahkan created_at
+            $data['created_at'] = date('Y-m-d H:i:s');
+            
+            $result = $this->db->table($this->table)->insert($data);
+
+            // Log untuk debugging
+            log_message('info', 'Insert Data PKD: ' . print_r($data, true));
+            log_message('info', 'Query: ' . $this->db->getLastQuery());
+            
+            return $result;
+        } catch (\Exception $e) {
+            log_message('error', 'Error inserting data: ' . $e->getMessage());
+            return false;
+        }
     }
 }

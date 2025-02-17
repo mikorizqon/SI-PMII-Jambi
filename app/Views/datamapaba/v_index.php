@@ -59,7 +59,7 @@
                             <th width="10%">Tanggal Lahir</th>
                             <th width="10%">Cabang</th>
                             <th width="12%">Universitas</th>
-                            <th width="8%">Tahun</th>
+                            <th width="8%">Tahun Mapaba</th>
                             <th width="8%">Aksi</th>
                         </tr>
                     </thead>

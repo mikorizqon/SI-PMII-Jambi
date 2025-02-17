@@ -36,13 +36,49 @@ class Userdatapkn extends BaseController
     public function insertdata()
     {
         if ($this->validate([
-            'nik' => 'required',
-            'nama' => 'required',
-            'tempat_lahir' => 'required',
-            'tanggal_lahir' => 'required',
-            'cabang' => 'required',
-            'universitas' => 'required',
-            'tahun_pkn' => 'required',
+            'nik' => [
+                'rules' => 'required|is_unique[tbl_data-pkn.nik]',
+                'errors' => [
+                    'required' => 'NIK harus diisi',
+                    'is_unique' => 'NIK sudah terdaftar'
+                ]
+            ],
+            'nama' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Nama harus diisi'
+                ]
+            ],
+            'tempat_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tempat lahir harus diisi'
+                ]
+            ],
+            'tanggal_lahir' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tanggal lahir harus diisi'
+                ]
+            ],
+            'cabang' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Cabang harus diisi'
+                ]
+            ],
+            'universitas' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Universitas harus diisi'
+                ]
+            ],
+            'tahun_pkn' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Tahun PKN harus diisi'
+                ]
+            ],
         ])) {
             $data = [
                 'nik' => $this->request->getPost('nik'),
@@ -53,9 +89,14 @@ class Userdatapkn extends BaseController
                 'universitas' => $this->request->getPost('universitas'),
                 'tahun_pkn' => $this->request->getPost('tahun_pkn'),
             ];
-            $this->Modeldatapkn->InsertData($data);
-            session()->setFlashdata('insert', 'Data Berhasil Ditambahkan');
-            return redirect()->to('userdatapkn');
+
+            if ($this->Modeldatapkn->insertDataUser($data)) {
+                session()->setFlashdata('success', 'Data berhasil ditambahkan!');
+                return redirect()->to('userdatapkn');
+            } else {
+                session()->setFlashdata('error', 'Gagal menambahkan data!');
+                return redirect()->to('userdatapkn/input')->withInput();
+            }
         } else {
             return redirect()->to('userdatapkn/input')->withInput();
         }
@@ -73,7 +114,7 @@ class Userdatapkn extends BaseController
             'tahun_pkn' => 'required',
         ])) {
             $data = [
-                'nama' => $nama,
+                'nama_lama' => $nama,
                 'nik' => $this->request->getPost('nik'),
                 'nama' => $this->request->getPost('nama'),
                 'tempat_lahir' => $this->request->getPost('tempat_lahir'),
@@ -82,9 +123,14 @@ class Userdatapkn extends BaseController
                 'universitas' => $this->request->getPost('universitas'),
                 'tahun_pkn' => $this->request->getPost('tahun_pkn'),
             ];
-            $this->Modeldatapkn->updatedata($data);
-            session()->setFlashdata('update', 'Data Berhasil Diupdate');
-            return redirect()->to('userdatapkn');
+
+            if ($this->Modeldatapkn->updateDataUser($data)) {
+                session()->setFlashdata('update', 'Data berhasil diperbarui!');
+                return redirect()->to('userdatapkn');
+            } else {
+                session()->setFlashdata('error', 'Gagal memperbarui data!');
+                return redirect()->to('userdatapkn/edit/' . $nama)->withInput();
+            }
         } else {
             return redirect()->to('userdatapkn/edit/' . $nama)->withInput();
         }
@@ -109,12 +155,35 @@ class Userdatapkn extends BaseController
     }
 
     public function deletedata($nama)
-        {
-            $data= [
-                'nama'=> $nama,
+    {
+        try {
+            $data = [
+                'nama' => $nama,
             ];
-            $this->Modeldatapkn->deletedata($data);
-            session()->setFlashdata('delete', 'Data Berhasil Didelete');
-            return redirect()->to('userdatapkn');
+            
+            if ($this->Modeldatapkn->DeleteData($data)) {
+                session()->setFlashdata('success', 'Data berhasil dihapus!');
+            } else {
+                session()->setFlashdata('error', 'Gagal menghapus data!');
+            }
+            
+        } catch (\Exception $e) {
+            session()->setFlashdata('error', 'Terjadi kesalahan saat menghapus data!');
+            log_message('error', 'Delete error: ' . $e->getMessage());
         }
+        
+        return redirect()->to('userdatapkn');
+    }
+
+    public function input()
+    {
+        $data = [
+            'judul' => 'Input Data PKN',
+            'subjudul' => 'INPUT DATA PKN',
+            'menu' => 'userdatapkn',
+            'submenu' => 'userdatapkn',
+            'page' => 'userdatapkn/v_input',
+        ];
+        return view('v_template_user', $data);
+    }
 }
